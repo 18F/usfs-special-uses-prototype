@@ -2,7 +2,11 @@
 
 The focal point for 18F/TTS project with the United States Forest Service special uses digital permitting 
 
-### Public domain
+## Contributing
+
+See [CONTRIBUTING](CONTRIBUTING.md) for additional information.
+
+## Public domain
 
 This project is in the worldwide [public domain](LICENSE.md). As stated in [CONTRIBUTING](CONTRIBUTING.md):
 
