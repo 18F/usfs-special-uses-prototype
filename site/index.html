@@ -1,889 +1,432 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  <meta charset="utf-8">
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>USDA Forest Service E-Permits</title>
-  <!-- base href="https://epermits.fs2c.usda.gov/" -->
-  <link rel="apple-touch-icon" sizes="180x180" href="https://epermits.fs2c.usda.gov/assets/favicons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://epermits.fs2c.usda.gov/assets/favicons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://epermits.fs2c.usda.gov/assets/favicons/favicon-16x16.png">
-  <link rel="manifest" href="https://epermits.fs2c.usda.gov/assets/favicons/manifest.json">
-  <link rel="mask-icon" href="https://epermits.fs2c.usda.gov/assets/favicons/safari-pinned-tab.svg" color="#2c1e13">
-  <link href="epermits_files/css_002.css" rel="stylesheet">
 
-  <link href="epermits_files/css2.css" rel="stylesheet">
-  <link href="epermits_files/css.css" rel="stylesheet" type="text/css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href= "/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href= "/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href= "/assets/favicons/manifest.json">
+  <link rel="mask-icon" href= "/assets/favicons/safari-pinned-tab.svg" color="#2c1e13">
   <meta name="theme-color" content="#ffffff">
-  <script async="" id="_fed_an_ua_tag" type="text/javascript" src="epermits_files/Universal-Federated-Analytics-Min.js"></script>
-<link rel="stylesheet" href="epermits_files/styles.css"><script type="text/javascript" src="epermits_files/js"></script><style>@media (max-width: 1023px) {
-  #main-content[_ngcontent-vnn-c3] {
-    padding-top: 80px;
-  }
-}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvYXBwLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUNBO0VBQ0U7SUFDRSxpQkFBQTtFQUFGO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyJcbkBtZWRpYSAobWF4LXdpZHRoOiAxMDIzcHgpIHtcbiAgI21haW4tY29udGVudCB7XG4gICAgcGFkZGluZy10b3A6IDgwcHg7XG4gIH1cbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><meta name="keywords" content="Forest Service, permitting, permits, christmas trees, national forest, national forests"><style>@charset "UTF-8";
-.header-container[_ngcontent-vnn-c14]   .primary-container[_ngcontent-vnn-c14] {
-  font-family: "Roboto";
-  max-width: 1040px;
-  margin: auto;
-  display: flex;
-  align-items: center;
-  height: 110px;
-}
-.header-container[_ngcontent-vnn-c14]   .header-left[_ngcontent-vnn-c14] {
-  display: flex;
-  align-items: center;
-  height: 70%;
-}
-.header-container[_ngcontent-vnn-c14]   .header-left[_ngcontent-vnn-c14]   img[_ngcontent-vnn-c14] {
-  max-height: 45px;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
-}
-.header-container[_ngcontent-vnn-c14]   .header-left[_ngcontent-vnn-c14]   .fs-usda-container[_ngcontent-vnn-c14] {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
-}
-.header-container[_ngcontent-vnn-c14]   .header-left[_ngcontent-vnn-c14]   .fs-name[_ngcontent-vnn-c14] {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 26px;
-  color: #474747;
-  letter-spacing: 0.125rem;
-}
-.header-container[_ngcontent-vnn-c14]   .header-left[_ngcontent-vnn-c14]   .usda-name[_ngcontent-vnn-c14] {
-  font-style: normal;
-  font-weight: 1000;
-  font-size: 10px;
-  line-height: 12px;
-  color: var(--fs-green);
-}
-.header-container[_ngcontent-vnn-c14]   .logout[_ngcontent-vnn-c14] {
-  margin-left: auto;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 0.37px;
-  color: var(--fs-green);
-  cursor: pointer;
-  white-space: nowrap;
-  padding-right: 0.25rem;
-}
-.header-container[_ngcontent-vnn-c14]   .logout[_ngcontent-vnn-c14]   .icon[_ngcontent-vnn-c14] {
-  padding-right: 8px;
-}
-.header-container[_ngcontent-vnn-c14]   .vert-divider[_ngcontent-vnn-c14] {
-  display: inline-block;
-  width: 1px;
-  height: 50px;
-  background-color: #979797;
-}
-.header-container[_ngcontent-vnn-c14]   .header-right[_ngcontent-vnn-c14] {
-  display: flex;
-  align-items: center;
-  height: 70%;
-  padding-left: 1rem;
-  left: 40.23%;
-  right: 14.69%;
-  top: 48.51%;
-  bottom: 29.85%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 35px;
-  letter-spacing: 1.42071px;
-  color: #474747;
-}
-.header-container[_ngcontent-vnn-c14]   .menu-btn[_ngcontent-vnn-c14] {
-  color: white;
-  height: 90%;
-  border-radius: 0px;
-  border: none;
-  background-color: var(--fs-green);
-  width: 75px;
-  padding: 0px;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.0028px;
-  margin-left: auto;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile[_ngcontent-vnn-c14] {
-  display: none;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14] {
-  font-family: "Source Sans Pro";
-  border-top: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
-  position: relative;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav-container[_ngcontent-vnn-c14] {
-  max-width: 1040px;
-  margin: auto;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14] {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   li[_ngcontent-vnn-c14] {
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding-right: 10px;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .primary-nav-item[_ngcontent-vnn-c14] {
-  cursor: pointer;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .nav-link[_ngcontent-vnn-c14] {
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.0028px;
-  color: #474747;
-  font-family: "Source Sans Pro";
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .dropdown-nav-link[_ngcontent-vnn-c14] {
-  padding-right: 3px;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   button[_ngcontent-vnn-c14] {
-  background-color: transparent;
-  border: none;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   button[_ngcontent-vnn-c14]:hover {
-  cursor: pointer;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .login[_ngcontent-vnn-c14] {
-  position: absolute;
-  right: 0px;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .login-text[_ngcontent-vnn-c14] {
-  padding-right: 5px;
-  left: 91.95%;
-  right: 4.77%;
-  top: 30.51%;
-  bottom: 28.81%;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-  color: var(--fs-green);
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .admin-dropdown-content[_ngcontent-vnn-c14] {
-  background-color: white;
-  display: none;
-  position: absolute;
-  top: 50px;
-  list-style-type: none;
-  padding-left: 0;
-  margin: 0;
-  border: 1px solid lightgrey;
-  width: 150px;
-  z-index: 10;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .admin-dropdown[_ngcontent-vnn-c14]:hover   .admin-dropdown-content[_ngcontent-vnn-c14] {
-  display: block;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .dropdown-button[_ngcontent-vnn-c14] {
-  display: flex;
-  align-items: center;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .seconday-nav-item[_ngcontent-vnn-c14] {
-  display: block;
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.0028px;
-  color: #474747;
-  font-family: "Source Sans Pro";
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-.header-container[_ngcontent-vnn-c14]   .secondary-container[_ngcontent-vnn-c14]   .nav[_ngcontent-vnn-c14]   .down-arrow[_ngcontent-vnn-c14] {
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #474747;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14] {
-  position: fixed;
-  top: 0px;
-  right: 0;
-  background-color: var(--fs-green);
-  height: 100vh;
-  width: 50vw;
-  max-width: 250px;
-  z-index: 99;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .mobile-nav[_ngcontent-vnn-c14] {
-  list-style-type: none;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .mobile-nav-item[_ngcontent-vnn-c14] {
-  color: white;
-  border-bottom: 1px solid white;
-  text-align: right;
-  padding: 0.5rem;
-  font-family: "Source Sans Pro";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.0028px;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .mobile-nav-item[_ngcontent-vnn-c14]:hover {
-  cursor: pointer;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .mobile-nav-item[_ngcontent-vnn-c14]:last-child {
-  border-bottom: none;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .close-nav[_ngcontent-vnn-c14] {
-  color: white;
-  height: 25px;
-  width: 25px;
-  border: 2px solid white;
-  padding: 5px;
-  margin-top: 10px;
-  margin-left: auto;
-  margin-right: 10px;
-  box-sizing: border-box;
-  position: relative;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .close-nav[_ngcontent-vnn-c14]:after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  content: "×";
-  color: #FFF;
-  text-align: center;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .close-nav[_ngcontent-vnn-c14]:hover {
-  cursor: pointer;
-}
-.header-container[_ngcontent-vnn-c14]   .mobile-nav-container[_ngcontent-vnn-c14]   .mobile-login-text[_ngcontent-vnn-c14] {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
-}
 
-@media (max-width: 1023px) {
-  .header-container[_ngcontent-vnn-c14] {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 10;
-  }
-  .header-container[_ngcontent-vnn-c14]   .primary-container[_ngcontent-vnn-c14] {
-    height: 60px;
-  }
-  .header-container[_ngcontent-vnn-c14]   .mobile[_ngcontent-vnn-c14] {
-    display: inline-block;
-  }
-  .header-container[_ngcontent-vnn-c14]   .desktop[_ngcontent-vnn-c14], .header-container[_ngcontent-vnn-c14]   .nav-container[_ngcontent-vnn-c14] {
-    display: none;
-  }
-  .header-container[_ngcontent-vnn-c14]   .header-left[_ngcontent-vnn-c14]   .fs-usda-container[_ngcontent-vnn-c14] {
-    display: none !important;
-  }
-  .header-container[_ngcontent-vnn-c14]   .header-right[_ngcontent-vnn-c14] {
-    padding-left: 1rem;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 23px;
-    letter-spacing: 1.42071px;
-  }
-  .header-container[_ngcontent-vnn-c14]   .logout[_ngcontent-vnn-c14] {
-    display: none;
-  }
-}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvc2hhcmVkL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUEsZ0JBQWdCO0FBQ2Q7RUFDRSxxQkFBQTtFQUNBLGlCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7QUFDSjtBQUNFO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtBQUNKO0FBQUk7RUFDRSxnQkFBQTtFQUNBLHFCQUFBO0VBQ0Esc0JBQUE7QUFFTjtBQUFJO0VBQ0Usa0JBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7RUFDQSxzQkFBQTtBQUVOO0FBQUk7RUFDRSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLHdCQUFBO0FBRU47QUFBSTtFQUNFLGtCQUFBO0VBQ0EsaUJBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSxzQkFBQTtBQUVOO0FBRUU7RUFDRSxpQkFBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLHNCQUFBO0VBQ0Esc0JBQUE7RUFDQSxlQUFBO0VBQ0EsbUJBQUE7RUFDQSxzQkFBQTtBQUFKO0FBRUk7RUFDRSxrQkFBQTtBQUFOO0FBSUU7RUFDRSxxQkFBQTtFQUNBLFVBQUE7RUFDQSxZQUFBO0VBQ0EseUJBQUE7QUFGSjtBQUlFO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsV0FBQTtFQUNBLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSxXQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSx5QkFBQTtFQUNBLGNBQUE7QUFGSjtBQUlFO0VBQ0UsWUFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxpQ0FBQTtFQUNBLFdBQUE7RUFDQSxZQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSx3QkFBQTtFQUNBLGlCQUFBO0FBRko7QUFJRTtFQUNFLGFBQUE7QUFGSjtBQUlFO0VBQ0UsOEJBQUE7RUFDQSw2QkFBQTtFQUNBLGdDQUFBO0VBQ0Esa0JBQUE7QUFGSjtBQUdJO0VBQ0UsaUJBQUE7RUFDQSxZQUFBO0FBRE47QUFHSTtFQUNFLFlBQUE7RUFDQSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxtQkFBQTtFQUNBLHFCQUFBO0VBQ0EsZUFBQTtFQUNBLFNBQUE7QUFETjtBQUVNO0VBQ0UsWUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLG1CQUFBO0FBQVI7QUFFTTtFQUNFLGVBQUE7QUFBUjtBQUVNO0VBQ0Usa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLHdCQUFBO0VBQ0EsY0FBQTtFQUNBLDhCQUFBO0FBQVI7QUFFTTtFQUNFLGtCQUFBO0FBQVI7QUFFTTtFQUNFLDZCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QUFBUjtBQUVNO0VBQ0UsZUFBQTtBQUFSO0FBRU07RUFDRSxrQkFBQTtFQUNBLFVBQUE7QUFBUjtBQUVNO0VBQ0Usa0JBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLHNCQUFBO0FBQVI7QUFFTTtFQUNFLHVCQUFBO0VBQ0EsYUFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLHFCQUFBO0VBQ0EsZUFBQTtFQUNBLFNBQUE7RUFDQSwyQkFBQTtFQUNBLFlBQUE7RUFDQSxXQUFBO0FBQVI7QUFFTTtFQUNFLGNBQUE7QUFBUjtBQUVNO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0FBQVI7QUFFTTtFQUNFLGNBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0Esd0JBQUE7RUFDQSxjQUFBO0VBQ0EsOEJBQUE7RUFDQSxrQkFBQTtFQUNBLG1CQUFBO0VBQ0EsbUJBQUE7RUFDQSxzQkFBQTtBQUFSO0FBRU07RUFDRSxRQUFBO0VBQ0EsU0FBQTtFQUNBLGtDQUFBO0VBQ0EsbUNBQUE7RUFDQSw2QkFBQTtBQUFSO0FBSUU7RUFDRSxlQUFBO0VBQ0EsUUFBQTtFQUNBLFFBQUE7RUFDQSxpQ0FBQTtFQUNBLGFBQUE7RUFDQSxXQUFBO0VBQ0EsZ0JBQUE7RUFDQSxXQUFBO0FBRko7QUFHSTtFQUNFLHFCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtBQUROO0FBR0k7RUFDRSxZQUFBO0VBQ0EsOEJBQUE7RUFDQSxpQkFBQTtFQUNBLGVBQUE7RUFDQSw4QkFBQTtFQUNBLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSx3QkFBQTtBQUROO0FBR0k7RUFDRSxlQUFBO0FBRE47QUFHSTtFQUNFLG1CQUFBO0FBRE47QUFHSTtFQUNFLFlBQUE7RUFDQSxZQUFBO0VBQ0EsV0FBQTtFQUNBLHVCQUFBO0VBQ0EsWUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxrQkFBQTtFQUNBLHNCQUFBO0VBQ0Esa0JBQUE7QUFETjtBQUdJO0VBQ0Usa0JBQUE7RUFDQSxNQUFBO0VBQ0EsU0FBQTtFQUNBLE9BQUE7RUFDQSxRQUFBO0VBQ0EsWUFBQTtFQUNBLFdBQUE7RUFDQSxrQkFBQTtBQUROO0FBR0k7RUFDRSxlQUFBO0FBRE47QUFHSTtFQUNFLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0FBRE47O0FBTUE7RUFDRTtJQUNFLGVBQUE7SUFDQSxNQUFBO0lBQ0EsV0FBQTtJQUNBLHVCQUFBO0lBQ0EsV0FBQTtFQUhGO0VBSUU7SUFDRSxZQUFBO0VBRko7RUFJRTtJQUNFLHFCQUFBO0VBRko7RUFJRTtJQUNFLGFBQUE7RUFGSjtFQUtJO0lBQ0Usd0JBQUE7RUFITjtFQU1FO0lBQ0Usa0JBQUE7SUFDQSxrQkFBQTtJQUNBLGdCQUFBO0lBQ0EsZUFBQTtJQUNBLGlCQUFBO0lBQ0EseUJBQUE7RUFKSjtFQU1FO0lBQ0UsYUFBQTtFQUpKO0FBQ0YiLCJzb3VyY2VzQ29udGVudCI6WyIuaGVhZGVyLWNvbnRhaW5lciB7ICBcbiAgLnByaW1hcnktY29udGFpbmVyIHtcbiAgICBmb250LWZhbWlseTogXCJSb2JvdG9cIjtcbiAgICBtYXgtd2lkdGg6IDEwNDBweDtcbiAgICBtYXJnaW46IGF1dG87XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGhlaWdodDogMTEwcHg7XG4gIH1cbiAgLmhlYWRlci1sZWZ0IHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgaGVpZ2h0OiA3MCU7XG4gICAgaW1nIHtcbiAgICAgIG1heC1oZWlnaHQ6IDQ1cHg7XG4gICAgICBwYWRkaW5nLWxlZnQ6IDAuMjVyZW07XG4gICAgICBwYWRkaW5nLXJpZ2h0OiAwLjI1cmVtO1xuICAgIH1cbiAgICAuZnMtdXNkYS1jb250YWluZXIge1xuICAgICAgcGFkZGluZy1sZWZ0OiAxcmVtO1xuICAgICAgcGFkZGluZy1yaWdodDogMXJlbTtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgIH1cbiAgICAuZnMtbmFtZSB7XG4gICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICBmb250LXdlaWdodDogNzAwO1xuICAgICAgZm9udC1zaXplOiAyMnB4O1xuICAgICAgbGluZS1oZWlnaHQ6IDI2cHg7XG4gICAgICBjb2xvcjogIzQ3NDc0NztcbiAgICAgIGxldHRlci1zcGFjaW5nOiAwLjEyNXJlbTtcbiAgICB9ICAgXG4gICAgLnVzZGEtbmFtZSB7XG4gICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICBmb250LXdlaWdodDogMTAwMDtcbiAgICAgIGZvbnQtc2l6ZTogMTBweDtcbiAgICAgIGxpbmUtaGVpZ2h0OiAxMnB4O1xuICAgICAgY29sb3I6IHZhcigtLWZzLWdyZWVuKTtcbiAgICB9XG4gIH1cbiAgXG4gIC5sb2dvdXQge1xuICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICBmb250LXdlaWdodDogNjAwO1xuICAgIGxldHRlci1zcGFjaW5nOiAwLjM3cHg7XG4gICAgY29sb3I6IHZhcigtLWZzLWdyZWVuKTtcbiAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgd2hpdGUtc3BhY2U6IG5vd3JhcDtcbiAgICBwYWRkaW5nLXJpZ2h0OiAwLjI1cmVtO1xuXG4gICAgLmljb24ge1xuICAgICAgcGFkZGluZy1yaWdodDogOHB4O1xuICAgIH1cbiAgfVxuXG4gIC52ZXJ0LWRpdmlkZXIge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICB3aWR0aDogMXB4O1xuICAgIGhlaWdodDogNTBweDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjOTc5Nzk3O1xuICB9XG4gIC5oZWFkZXItcmlnaHQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDcwJTtcbiAgICBwYWRkaW5nLWxlZnQ6IDFyZW07XG4gICAgbGVmdDogNDAuMjMlO1xuICAgIHJpZ2h0OiAxNC42OSU7XG4gICAgdG9wOiA0OC41MSU7XG4gICAgYm90dG9tOiAyOS44NSU7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgZm9udC1zaXplOiAzMHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAzNXB4O1xuICAgIGxldHRlci1zcGFjaW5nOiAxLjQyMDcxcHg7XG4gICAgY29sb3I6ICM0NzQ3NDc7XG4gIH1cbiAgLm1lbnUtYnRuIHtcbiAgICBjb2xvcjogd2hpdGU7XG4gICAgaGVpZ2h0OiA5MCU7XG4gICAgYm9yZGVyLXJhZGl1czogMHB4O1xuICAgIGJvcmRlcjogbm9uZTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1mcy1ncmVlbik7XG4gICAgd2lkdGg6IDc1cHg7XG4gICAgcGFkZGluZzogMHB4O1xuICAgIGZvbnQtd2VpZ2h0OiA5MDA7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxOHB4O1xuICAgIGxldHRlci1zcGFjaW5nOiAwLjAwMjhweDtcbiAgICBtYXJnaW4tbGVmdDogYXV0bztcbiAgfVxuICAubW9iaWxlIHtcbiAgICBkaXNwbGF5OiBub25lO1xuICB9XG4gIC5zZWNvbmRhcnktY29udGFpbmVyIHtcbiAgICBmb250LWZhbWlseTogJ1NvdXJjZSBTYW5zIFBybyc7XG4gICAgYm9yZGVyLXRvcDogMXB4IHNvbGlkICNEOUQ5RDk7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNEOUQ5RDk7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIC5uYXYtY29udGFpbmVyIHtcbiAgICAgIG1heC13aWR0aDogMTA0MHB4O1xuICAgICAgbWFyZ2luOiBhdXRvO1xuICAgIH1cbiAgICAubmF2IHtcbiAgICAgIGhlaWdodDogNTBweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgZmxleC1kaXJlY3Rpb246IHJvdztcbiAgICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcbiAgICAgIHBhZGRpbmctbGVmdDogMDtcbiAgICAgIG1hcmdpbjogMDtcbiAgICAgIGxpIHtcbiAgICAgICAgaGVpZ2h0OiAxMDAlO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBwYWRkaW5nLXJpZ2h0OiAxMHB4O1xuICAgICAgfVxuICAgICAgLnByaW1hcnktbmF2LWl0ZW0ge1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICB9XG4gICAgICAubmF2LWxpbmsge1xuICAgICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiA5MDA7XG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgbGluZS1oZWlnaHQ6IDE4cHg7XG4gICAgICAgIGxldHRlci1zcGFjaW5nOiAwLjAwMjhweDtcbiAgICAgICAgY29sb3I6ICM0NzQ3NDc7XG4gICAgICAgIGZvbnQtZmFtaWx5OiAnU291cmNlIFNhbnMgUHJvJztcbiAgICAgIH1cbiAgICAgIC5kcm9wZG93bi1uYXYtbGluayB7XG4gICAgICAgIHBhZGRpbmctcmlnaHQ6IDNweDtcbiAgICAgIH1cbiAgICAgIGJ1dHRvbiB7XG4gICAgICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50O1xuICAgICAgICBib3JkZXI6IG5vbmU7XG4gICAgICAgIHBhZGRpbmctbGVmdDogMXJlbTtcbiAgICAgICAgcGFkZGluZy1yaWdodDogMXJlbTtcbiAgICAgIH1cbiAgICAgIGJ1dHRvbjpob3ZlciB7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgIH1cbiAgICAgIC5sb2dpbiB7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgcmlnaHQ6IDBweDtcbiAgICAgIH0gICAgXG4gICAgICAubG9naW4tdGV4dCB7XG4gICAgICAgIHBhZGRpbmctcmlnaHQ6IDVweDtcbiAgICAgICAgbGVmdDogOTEuOTUlO1xuICAgICAgICByaWdodDogNC43NyU7XG4gICAgICAgIHRvcDogMzAuNTElO1xuICAgICAgICBib3R0b206IDI4LjgxJTtcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiAxNTAlO1xuICAgICAgICBjb2xvcjogdmFyKC0tZnMtZ3JlZW4pO1xuICAgICAgfVxuICAgICAgLmFkbWluLWRyb3Bkb3duLWNvbnRlbnQge1xuICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICAgICAgZGlzcGxheTogbm9uZTtcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICB0b3A6IDUwcHg7XG4gICAgICAgIGxpc3Qtc3R5bGUtdHlwZTogbm9uZTtcbiAgICAgICAgcGFkZGluZy1sZWZ0OiAwO1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIGxpZ2h0Z3JleTtcbiAgICAgICAgd2lkdGg6IDE1MHB4O1xuICAgICAgICB6LWluZGV4OiAxMDtcbiAgICAgIH1cbiAgICAgIC5hZG1pbi1kcm9wZG93bjpob3ZlciAuYWRtaW4tZHJvcGRvd24tY29udGVudCB7XG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgfVxuICAgICAgLmRyb3Bkb3duLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICB9XG4gICAgICAuc2Vjb25kYXktbmF2LWl0ZW0ge1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgICBmb250LXdlaWdodDogOTAwO1xuICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiAxOHB4O1xuICAgICAgICBsZXR0ZXItc3BhY2luZzogMC4wMDI4cHg7XG4gICAgICAgIGNvbG9yOiAjNDc0NzQ3O1xuICAgICAgICBmb250LWZhbWlseTogXCJTb3VyY2UgU2FucyBQcm9cIjtcbiAgICAgICAgcGFkZGluZy1sZWZ0OiAxcmVtO1xuICAgICAgICBwYWRkaW5nLXJpZ2h0OiAxcmVtO1xuICAgICAgICBwYWRkaW5nLXRvcDogMC41cmVtO1xuICAgICAgICBwYWRkaW5nLWJvdHRvbTogMC41cmVtO1xuICAgICAgfVxuICAgICAgLmRvd24tYXJyb3cge1xuICAgICAgICB3aWR0aDogMDtcbiAgICAgICAgaGVpZ2h0OiAwO1xuICAgICAgICBib3JkZXItbGVmdDogNXB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgICAgICBib3JkZXItcmlnaHQ6IDVweCBzb2xpZCB0cmFuc3BhcmVudDtcbiAgICAgICAgYm9yZGVyLXRvcDogNXB4IHNvbGlkICM0NzQ3NDc7XG4gICAgICB9XG4gICAgfVxuICB9XG4gIC5tb2JpbGUtbmF2LWNvbnRhaW5lciB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMHB4O1xuICAgIHJpZ2h0OiAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWZzLWdyZWVuKTtcbiAgICBoZWlnaHQ6IDEwMHZoO1xuICAgIHdpZHRoOiA1MHZ3O1xuICAgIG1heC13aWR0aDogMjUwcHg7XG4gICAgei1pbmRleDogOTk7XG4gICAgLm1vYmlsZS1uYXYge1xuICAgICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICAgICAgcGFkZGluZy1sZWZ0OiA1cHg7XG4gICAgICBwYWRkaW5nLXJpZ2h0OiA1cHg7XG4gICAgfVxuICAgIC5tb2JpbGUtbmF2LWl0ZW0ge1xuICAgICAgY29sb3I6IHdoaXRlO1xuICAgICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHdoaXRlO1xuICAgICAgdGV4dC1hbGlnbjogcmlnaHQ7XG4gICAgICBwYWRkaW5nOiAwLjVyZW07XG4gICAgICBmb250LWZhbWlseTogJ1NvdXJjZSBTYW5zIFBybyc7XG4gICAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgICBmb250LXdlaWdodDogOTAwO1xuICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgbGluZS1oZWlnaHQ6IDE4cHg7XG4gICAgICBsZXR0ZXItc3BhY2luZzogMC4wMDI4cHg7XG4gICAgfVxuICAgIC5tb2JpbGUtbmF2LWl0ZW06aG92ZXIge1xuICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIH1cbiAgICAubW9iaWxlLW5hdi1pdGVtOmxhc3QtY2hpbGQge1xuICAgICAgYm9yZGVyLWJvdHRvbTogbm9uZTtcbiAgICB9XG4gICAgLmNsb3NlLW5hdiB7XG4gICAgICBjb2xvcjogd2hpdGU7XG4gICAgICBoZWlnaHQ6IDI1cHg7XG4gICAgICB3aWR0aDogMjVweDtcbiAgICAgIGJvcmRlcjogMnB4IHNvbGlkIHdoaXRlO1xuICAgICAgcGFkZGluZzogNXB4O1xuICAgICAgbWFyZ2luLXRvcDogMTBweDtcbiAgICAgIG1hcmdpbi1sZWZ0OiBhdXRvO1xuICAgICAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xuICAgICAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB9XG4gICAgLmNsb3NlLW5hdjphZnRlciB7XG4gICAgICBwb3NpdGlvbjogYWJzb2x1dGU7XG4gICAgICB0b3A6IDA7XG4gICAgICBib3R0b206IDA7XG4gICAgICBsZWZ0OiAwO1xuICAgICAgcmlnaHQ6IDA7XG4gICAgICBjb250ZW50OiBcIlxcZDdcIjtcbiAgICAgIGNvbG9yOiAjRkZGO1xuICAgICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIH1cbiAgICAuY2xvc2UtbmF2OmhvdmVyIHtcbiAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICB9ICAgXG4gICAgLm1vYmlsZS1sb2dpbi10ZXh0IHtcbiAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICBsaW5lLWhlaWdodDogMTUwJTtcbiAgICB9XG4gIH1cbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEwMjNweCkge1xuICAuaGVhZGVyLWNvbnRhaW5lciB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcbiAgICB6LWluZGV4OiAxMDtcbiAgICAucHJpbWFyeS1jb250YWluZXIge1xuICAgICAgaGVpZ2h0OiA2MHB4O1xuICAgIH1cbiAgICAubW9iaWxlIHtcbiAgICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICB9XG4gICAgLmRlc2t0b3AsIC5uYXYtY29udGFpbmVyIHtcbiAgICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgfVxuICAgIC5oZWFkZXItbGVmdCB7XG4gICAgICAuZnMtdXNkYS1jb250YWluZXIge1xuICAgICAgICBkaXNwbGF5OiBub25lICFpbXBvcnRhbnQ7XG4gICAgICB9XG4gICAgfVxuICAgIC5oZWFkZXItcmlnaHQge1xuICAgICAgcGFkZGluZy1sZWZ0OiAxcmVtO1xuICAgICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICAgIGxpbmUtaGVpZ2h0OiAyM3B4O1xuICAgICAgbGV0dGVyLXNwYWNpbmc6IDEuNDIwNzFweDtcbiAgICB9XG4gICAgLmxvZ291dCB7XG4gICAgICBkaXNwbGF5OiBub25lO1xuICAgIH1cbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.footer-container[_ngcontent-vnn-c13] {
-  font-family: "Public Sans";
-}
-.footer-container[_ngcontent-vnn-c13]   .primary-nav-container[_ngcontent-vnn-c13] {
-  background-color: #dfe1e2;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.footer-container[_ngcontent-vnn-c13]   .footer-primary-nav[_ngcontent-vnn-c13] {
-  height: 50px;
-  max-width: 1040px;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 0px;
-  margin: auto;
-}
-.footer-container[_ngcontent-vnn-c13]   .footer-primary-nav[_ngcontent-vnn-c13]   .footer-primary-nav-item[_ngcontent-vnn-c13]   a[_ngcontent-vnn-c13] {
-  text-decoration: none;
-  color: black;
-  font-weight: 700;
-}
-.footer-container[_ngcontent-vnn-c13]   .secondary-container[_ngcontent-vnn-c13] {
-  background-color: #f0f0f0;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.footer-container[_ngcontent-vnn-c13]   .footer-secondary-nav[_ngcontent-vnn-c13] {
-  max-width: 1040px;
-  margin: auto;
-  list-style-type: none;
-  display: grid;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-auto-flow: column;
-  padding-left: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-.footer-container[_ngcontent-vnn-c13]   .footer-secondary-nav[_ngcontent-vnn-c13]   .footer-secondary-nav-item[_ngcontent-vnn-c13] {
-  padding-bottom: 1rem;
-}
-.footer-container[_ngcontent-vnn-c13]   .footer-secondary-nav[_ngcontent-vnn-c13]   .footer-secondary-nav-item[_ngcontent-vnn-c13]   a[_ngcontent-vnn-c13] {
-  font-size: 1rem;
-  text-decoration: none;
-  color: black;
-  font-family: "Public Sans";
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13] {
-  height: 100px;
-  display: flex;
-  align-items: center;
-  max-width: 1040px;
-  margin: auto;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .footer-branding-container[_ngcontent-vnn-c13] {
-  display: flex;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .footer-branding-container[_ngcontent-vnn-c13]   .fs-usda-names-container[_ngcontent-vnn-c13] {
-  display: flex;
-  flex-direction: column;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .footer-branding-container[_ngcontent-vnn-c13]   .fs-usda-names-container[_ngcontent-vnn-c13]   .fs-name[_ngcontent-vnn-c13] {
-  font-weight: 700;
-  font-size: 1.38rem;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .footer-branding-container[_ngcontent-vnn-c13]   .footer-logos[_ngcontent-vnn-c13] {
-  margin-right: 1rem;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .social-links[_ngcontent-vnn-c13] {
-  margin-left: auto;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .social-links[_ngcontent-vnn-c13]   .social-link[_ngcontent-vnn-c13] {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .social-links[_ngcontent-vnn-c13]   .social-link[_ngcontent-vnn-c13]   img[_ngcontent-vnn-c13] {
-  height: 32px;
-  width: 32px;
-}
-.footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   img[_ngcontent-vnn-c13] {
-  height: 50px;
-}
+  <meta name="keywords" content="Forest Service, permitting, permits, christmas trees, national forest, national forests">
 
-.usda-name.mobile[_ngcontent-vnn-c13] {
-  display: none;
-}
-
-@media (max-width: 1023px) {
-  .usda-name.desktop[_ngcontent-vnn-c13] {
-    display: none;
-  }
-  .usda-name.mobile[_ngcontent-vnn-c13] {
-    display: block;
-  }
-  .footer-container[_ngcontent-vnn-c13]   .footer-primary-nav[_ngcontent-vnn-c13] {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    height: auto;
-  }
-  .footer-container[_ngcontent-vnn-c13]   .footer-primary-nav[_ngcontent-vnn-c13]   .footer-primary-nav-item[_ngcontent-vnn-c13] {
-    width: 100%;
-    border-top: 1px solid black;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-  .footer-container[_ngcontent-vnn-c13]   .footer-primary-nav[_ngcontent-vnn-c13]   .footer-primary-nav-item[_ngcontent-vnn-c13]:last-child {
-    border-bottom: 1px solid black;
-  }
-  .footer-container[_ngcontent-vnn-c13]   .secondary-container[_ngcontent-vnn-c13]   .footer-secondary-nav[_ngcontent-vnn-c13] {
-    grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
-  }
-  .footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13] {
-    flex-direction: column;
-    align-items: start;
-    padding-top: 0.5rem;
-    padding-left: 0.25rem;
-  }
-  .footer-container[_ngcontent-vnn-c13]   .tertiary-container[_ngcontent-vnn-c13]   .social-links[_ngcontent-vnn-c13] {
-    margin-left: 0;
-  }
-}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvc2hhcmVkL2Zvb3Rlci9mb290ZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSwwQkFBQTtBQUNGO0FBQUU7RUFDRSx5QkFBQTtFQUNBLG9CQUFBO0VBQ0EscUJBQUE7QUFFSjtBQUFFO0VBQ0UsWUFBQTtFQUNBLGlCQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFBO0VBQ0EsOEJBQUE7RUFDQSxtQkFBQTtFQUNBLGlCQUFBO0VBQ0EsWUFBQTtBQUVKO0FBREk7RUFDRSxxQkFBQTtFQUNBLFlBQUE7RUFDQSxnQkFBQTtBQUdOO0FBQUU7RUFDRSx5QkFBQTtFQUNBLG9CQUFBO0VBQ0EscUJBQUE7QUFFSjtBQUFFO0VBQ0UsaUJBQUE7RUFDQSxZQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFBO0VBQ0EsaURBQUE7RUFDQSxzQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLG9CQUFBO0FBRUo7QUFESTtFQUNFLG9CQUFBO0FBR047QUFESTtFQUNFLGVBQUE7RUFDQSxxQkFBQTtFQUNBLFlBQUE7RUFDQSwwQkFBQTtBQUdOO0FBQUU7RUFDRSxhQUFBO0VBQ0EsYUFBQTtFQUNBLG1CQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0FBRUo7QUFESTtFQUNFLGFBQUE7QUFHTjtBQUZNO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0FBSVI7QUFIUTtFQUNFLGdCQUFBO0VBQ0Esa0JBQUE7QUFLVjtBQUZNO0VBQ0Usa0JBQUE7QUFJUjtBQURJO0VBQ0UsaUJBQUE7QUFHTjtBQUZNO0VBQ0Usb0JBQUE7RUFDQSxxQkFBQTtBQUlSO0FBRk07RUFDRSxZQUFBO0VBQ0EsV0FBQTtBQUlSO0FBREk7RUFDRSxZQUFBO0FBR047O0FBRUE7RUFDRSxhQUFBO0FBQ0Y7O0FBRUE7RUFDRTtJQUNFLGFBQUE7RUFDRjtFQUVBO0lBQ0UsY0FBQTtFQUFGO0VBSUU7SUFDRSxhQUFBO0lBQ0Esc0JBQUE7SUFDQSxrQkFBQTtJQUNBLFlBQUE7RUFGSjtFQUdJO0lBQ0UsV0FBQTtJQUNBLDJCQUFBO0lBQ0EsaUJBQUE7SUFDQSxvQkFBQTtFQUROO0VBSUk7SUFDRSw4QkFBQTtFQUZOO0VBTUk7SUFDRSwwRUFBQTtFQUpOO0VBT0U7SUFDRSxzQkFBQTtJQUNBLGtCQUFBO0lBQ0EsbUJBQUE7SUFDQSxxQkFBQTtFQUxKO0VBTUk7SUFDRSxjQUFBO0VBSk47QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIi5mb290ZXItY29udGFpbmVyIHtcbiAgZm9udC1mYW1pbHk6ICdQdWJsaWMgU2Fucyc7XG4gIC5wcmltYXJ5LW5hdi1jb250YWluZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNkZmUxZTI7IFxuICAgIHBhZGRpbmctbGVmdDogMC41cmVtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDAuNXJlbTtcbiAgfVxuICAuZm9vdGVyLXByaW1hcnktbmF2IHtcbiAgICBoZWlnaHQ6IDUwcHg7XG4gICAgbWF4LXdpZHRoOiAxMDQwcHg7XG4gICAgbGlzdC1zdHlsZS10eXBlOiBub25lO1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZy1sZWZ0OiAwcHg7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgIC5mb290ZXItcHJpbWFyeS1uYXYtaXRlbSBhIHtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgIGZvbnQtd2VpZ2h0OiA3MDA7XG4gICAgfVxuICB9XG4gIC5zZWNvbmRhcnktY29udGFpbmVyIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZjBmMGYwO1xuICAgIHBhZGRpbmctbGVmdDogMC41cmVtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDAuNXJlbTtcbiAgfVxuICAuZm9vdGVyLXNlY29uZGFyeS1uYXYge1xuICAgIG1heC13aWR0aDogMTA0MHB4O1xuICAgIG1hcmdpbjogYXV0bztcbiAgICBsaXN0LXN0eWxlLXR5cGU6IG5vbmU7XG4gICAgZGlzcGxheTogZ3JpZDtcbiAgICBncmlkLXRlbXBsYXRlLXJvd3M6IGF1dG8gYXV0byBhdXRvIGF1dG8gYXV0byBhdXRvO1xuICAgIGdyaWQtYXV0by1mbG93OiBjb2x1bW47XG4gICAgcGFkZGluZy1sZWZ0OiAwO1xuICAgIHBhZGRpbmctdG9wOiAycmVtO1xuICAgIHBhZGRpbmctYm90dG9tOiAycmVtO1xuICAgIC5mb290ZXItc2Vjb25kYXJ5LW5hdi1pdGVtIHtcbiAgICAgIHBhZGRpbmctYm90dG9tOiAxcmVtO1xuICAgIH1cbiAgICAuZm9vdGVyLXNlY29uZGFyeS1uYXYtaXRlbSBhIHtcbiAgICAgIGZvbnQtc2l6ZTogMXJlbTtcbiAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICAgIGNvbG9yOiBibGFjaztcbiAgICAgIGZvbnQtZmFtaWx5OiAnUHVibGljIFNhbnMnO1xuICAgIH1cbiAgfVxuICAudGVydGlhcnktY29udGFpbmVyIHtcbiAgICBoZWlnaHQ6IDEwMHB4O1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICBtYXgtd2lkdGg6IDEwNDBweDtcbiAgICBtYXJnaW46IGF1dG87XG4gICAgLmZvb3Rlci1icmFuZGluZy1jb250YWluZXIge1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIC5mcy11c2RhLW5hbWVzLWNvbnRhaW5lciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIC5mcy1uYW1lIHtcbiAgICAgICAgICBmb250LXdlaWdodDogNzAwO1xuICAgICAgICAgIGZvbnQtc2l6ZTogMS4zOHJlbTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgICAgLmZvb3Rlci1sb2dvcyB7XG4gICAgICAgIG1hcmdpbi1yaWdodDogMXJlbTtcbiAgICAgIH1cbiAgICB9XG4gICAgLnNvY2lhbC1saW5rcyB7XG4gICAgICBtYXJnaW4tbGVmdDogYXV0bztcbiAgICAgIC5zb2NpYWwtbGluayB7XG4gICAgICAgIHBhZGRpbmctbGVmdDogMC41cmVtO1xuICAgICAgICBwYWRkaW5nLXJpZ2h0OiAwLjVyZW07XG4gICAgICB9XG4gICAgICAuc29jaWFsLWxpbmsgaW1nIHtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgIH1cbiAgICB9XG4gICAgaW1nIHtcbiAgICAgIGhlaWdodDogNTBweDtcbiAgICB9XG4gIH1cbn1cblxuLnVzZGEtbmFtZS5tb2JpbGUge1xuICBkaXNwbGF5OiBub25lO1xufVxuXG5AbWVkaWEgKG1heC13aWR0aDogMTAyM3B4KSB7XG4gIC51c2RhLW5hbWUuZGVza3RvcCB7XG4gICAgZGlzcGxheTogbm9uZTtcbiAgfVxuXG4gIC51c2RhLW5hbWUubW9iaWxlIHtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgfVxuXG4gIC5mb290ZXItY29udGFpbmVyIHsgICAgXG4gICAgLmZvb3Rlci1wcmltYXJ5LW5hdiB7XG4gICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgIGFsaWduLWl0ZW1zOiBzdGFydDtcbiAgICAgIGhlaWdodDogYXV0bztcbiAgICAgIC5mb290ZXItcHJpbWFyeS1uYXYtaXRlbSB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBib3JkZXItdG9wOiAxcHggc29saWQgYmxhY2s7XG4gICAgICAgIHBhZGRpbmctdG9wOiAxcmVtO1xuICAgICAgICBwYWRkaW5nLWJvdHRvbTogMXJlbTtcbiAgICAgIH1cbiAgICAgICAgXG4gICAgICAuZm9vdGVyLXByaW1hcnktbmF2LWl0ZW06bGFzdC1jaGlsZCB7XG4gICAgICAgIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCBibGFjaztcbiAgICAgIH1cbiAgICB9XG4gICAgLnNlY29uZGFyeS1jb250YWluZXIge1xuICAgICAgLmZvb3Rlci1zZWNvbmRhcnktbmF2IHtcbiAgICAgICAgZ3JpZC10ZW1wbGF0ZS1yb3dzOiBhdXRvIGF1dG8gYXV0byBhdXRvIGF1dG8gYXV0byBhdXRvIGF1dG8gYXV0byBhdXRvIGF1dG87XG4gICAgICB9XG4gICAgfVxuICAgIC50ZXJ0aWFyeS1jb250YWluZXIge1xuICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgIGFsaWduLWl0ZW1zOiBzdGFydDtcbiAgICAgIHBhZGRpbmctdG9wOiAwLjVyZW07XG4gICAgICBwYWRkaW5nLWxlZnQ6IDAuMjVyZW07XG4gICAgICAuc29jaWFsLWxpbmtzIHtcbiAgICAgICAgbWFyZ2luLWxlZnQ6IDA7XG4gICAgICB9XG4gICAgfVxuICB9XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style><style>.banner-container[_ngcontent-vnn-c45] {
-  font-family: "Source Sans Pro";
-  background-color: #E1E1E1;
-}
-.banner-container[_ngcontent-vnn-c45]   .content-container[_ngcontent-vnn-c45] {
-  max-width: 1040px;
-  margin: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-.banner-container[_ngcontent-vnn-c45]   .header-container[_ngcontent-vnn-c45] {
-  display: flex;
-  align-items: center;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-text[_ngcontent-vnn-c45] {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 11px;
-  letter-spacing: -0.0045px;
-  color: #474747;
-  padding-left: 0.5rem;
-}
-.banner-container[_ngcontent-vnn-c45]   .us-flag[_ngcontent-vnn-c45] {
-  width: 18px;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-expand-btn[_ngcontent-vnn-c45] {
-  background-color: transparent;
-  border: none;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-expand-text[_ngcontent-vnn-c45] {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 11px;
-  letter-spacing: -0.0009px;
-  color: #474747;
-  text-decoration: underline;
-  margin: 0;
-  padding-right: 5px;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-expand-btn[_ngcontent-vnn-c45]:hover {
-  cursor: pointer;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-expanded[_ngcontent-vnn-c45] {
-  display: flex;
-  align-items: center;
-  padding: 1.5rem;
-  font-size: 0.94rem;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-expanded[_ngcontent-vnn-c45]   img[_ngcontent-vnn-c45] {
-  display: inline-block;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-expanded[_ngcontent-vnn-c45]   .banner-content[_ngcontent-vnn-c45] {
-  display: flex;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-expanded[_ngcontent-vnn-c45]   .banner-expanded-text[_ngcontent-vnn-c45] {
-  box-sizing: border-box;
-  padding-left: 1rem;
-  padding-right: 2rem;
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-icon[_ngcontent-vnn-c45] {
-  width: 40px;
-}
-.banner-container[_ngcontent-vnn-c45]   .arrow[_ngcontent-vnn-c45] {
-  border: solid black;
-  border-width: 0 2px 2px 0;
-  display: inline-block;
-  padding: 2px;
-}
-.banner-container[_ngcontent-vnn-c45]   .down-arrow[_ngcontent-vnn-c45] {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
-.banner-container[_ngcontent-vnn-c45]   .up-arrow[_ngcontent-vnn-c45] {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-}
-.banner-container[_ngcontent-vnn-c45]   .banner-text[_ngcontent-vnn-c45] {
-  display: flex;
-}
-
-@media (max-width: 639px) {
-  .banner-text[_ngcontent-vnn-c45] {
-    flex-direction: column;
-    align-items: start;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-  }
-  .banner-expanded[_ngcontent-vnn-c45] {
-    flex-direction: column;
-  }
-}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvc2hhcmVkL2hlYWRlci9nb3YtYmFubmVyL2dvdi1iYW5uZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDRSw4QkFBQTtFQUNBLHlCQUFBO0FBQ0Y7QUFBRTtFQUNFLGlCQUFBO0VBQ0EsWUFBQTtFQUNBLGtCQUFBO0VBQ0EsbUJBQUE7QUFFSjtBQUFFO0VBQ0UsYUFBQTtFQUNBLG1CQUFBO0FBRUo7QUFBRTtFQUNFLHFCQUFBO0VBQ0Esa0JBQUE7RUFDQSxnQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLHlCQUFBO0VBQ0EsY0FBQTtFQUNBLG9CQUFBO0FBRUo7QUFBRTtFQUNFLFdBQUE7QUFFSjtBQUFFO0VBQ0UsNkJBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtFQUNBLGlCQUFBO0FBRUo7QUFBRTtFQUNFLGtCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7RUFDQSx5QkFBQTtFQUNBLGNBQUE7RUFDQSwwQkFBQTtFQUNBLFNBQUE7RUFDQSxrQkFBQTtBQUVKO0FBQUU7RUFDRSxlQUFBO0FBRUo7QUFBRTtFQUNFLGFBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtBQUVKO0FBREk7RUFDRSxxQkFBQTtBQUdOO0FBREk7RUFDRSxhQUFBO0FBR047QUFESTtFQUNFLHNCQUFBO0VBQ0Esa0JBQUE7RUFDQSxtQkFBQTtBQUdOO0FBQUU7RUFDRSxXQUFBO0FBRUo7QUFBRTtFQUNFLG1CQUFBO0VBQ0EseUJBQUE7RUFDQSxxQkFBQTtFQUNBLFlBQUE7QUFFSjtBQUFFO0VBQ0Usd0JBQUE7RUFDQSxnQ0FBQTtBQUVKO0FBQUU7RUFDRSwwQkFBQTtFQUNBLGtDQUFBO0FBRUo7QUFDRTtFQUNFLGFBQUE7QUFDSjs7QUFHQTtFQUNFO0lBQ0Usc0JBQUE7SUFDQSxrQkFBQTtJQUNBLG9CQUFBO0lBQ0EsdUJBQUE7RUFBRjtFQUVBO0lBQ0Usc0JBQUE7RUFBRjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLmJhbm5lci1jb250YWluZXIge1xuICBmb250LWZhbWlseTogXCJTb3VyY2UgU2FucyBQcm9cIjtcbiAgYmFja2dyb3VuZC1jb2xvcjogI0UxRTFFMTtcbiAgLmNvbnRlbnQtY29udGFpbmVyIHtcbiAgICBtYXgtd2lkdGg6IDEwNDBweDtcbiAgICBtYXJnaW46IGF1dG87XG4gICAgcGFkZGluZy1sZWZ0OiAxcmVtO1xuICAgIHBhZGRpbmctcmlnaHQ6IDFyZW07XG4gIH1cbiAgLmhlYWRlci1jb250YWluZXIge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgfVxuICAuYmFubmVyLXRleHQge1xuICAgIGZvbnQtZmFtaWx5OiAnUm9ib3RvJztcbiAgICBmb250LXN0eWxlOiBub3JtYWw7XG4gICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICBmb250LXNpemU6IDEycHg7XG4gICAgbGluZS1oZWlnaHQ6IDExcHg7XG4gICAgbGV0dGVyLXNwYWNpbmc6IC0wLjAwNDVweDtcbiAgICBjb2xvcjogIzQ3NDc0NztcbiAgICBwYWRkaW5nLWxlZnQ6IDAuNXJlbTtcbiAgfVxuICAudXMtZmxhZyB7XG4gICAgd2lkdGg6IDE4cHg7XG4gIH1cbiAgLmJhbm5lci1leHBhbmQtYnRuIHtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB0cmFuc3BhcmVudDtcbiAgICBib3JkZXI6IG5vbmU7XG4gICAgcGFkZGluZy10b3A6IDA7XG4gICAgcGFkZGluZy1ib3R0b206IDA7XG4gIH1cbiAgLmJhbm5lci1leHBhbmQtdGV4dCB7XG4gICAgZm9udC1zdHlsZTogbm9ybWFsO1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgZm9udC1zaXplOiAxMnB4O1xuICAgIGxpbmUtaGVpZ2h0OiAxMXB4O1xuICAgIGxldHRlci1zcGFjaW5nOiAtMC4wMDA5cHg7XG4gICAgY29sb3I6ICM0NzQ3NDc7XG4gICAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7XG4gICAgbWFyZ2luOiAwO1xuICAgIHBhZGRpbmctcmlnaHQ6IDVweDtcbiAgfVxuICAuYmFubmVyLWV4cGFuZC1idG46aG92ZXIge1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgfVxuICAuYmFubmVyLWV4cGFuZGVkIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgcGFkZGluZzogMS41cmVtO1xuICAgIGZvbnQtc2l6ZTogMC45NHJlbTtcbiAgICBpbWcge1xuICAgICAgZGlzcGxheTogaW5saW5lLWJsb2NrO1xuICAgIH1cbiAgICAuYmFubmVyLWNvbnRlbnQge1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICB9XG4gICAgLmJhbm5lci1leHBhbmRlZC10ZXh0IHtcbiAgICAgIGJveC1zaXppbmc6IGJvcmRlci1ib3g7XG4gICAgICBwYWRkaW5nLWxlZnQ6IDFyZW07XG4gICAgICBwYWRkaW5nLXJpZ2h0OiAycmVtO1xuICAgIH1cbiAgfVxuICAuYmFubmVyLWljb24ge1xuICAgIHdpZHRoOiA0MHB4O1xuICB9XG4gIC5hcnJvdyB7XG4gICAgYm9yZGVyOiBzb2xpZCBibGFjaztcbiAgICBib3JkZXItd2lkdGg6IDAgMnB4IDJweCAwO1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgICBwYWRkaW5nOiAycHg7XG4gIH1cbiAgLmRvd24tYXJyb3cge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKTtcbiAgICAtd2Via2l0LXRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKTtcbiAgfVxuICAudXAtYXJyb3cge1xuICAgIHRyYW5zZm9ybTogcm90YXRlKC0xMzVkZWcpO1xuICAgIC13ZWJraXQtdHJhbnNmb3JtOiByb3RhdGUoLTEzNWRlZyk7XG4gIH1cblxuICAuYmFubmVyLXRleHQge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gIH1cbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDYzOXB4KSB7XG4gIC5iYW5uZXItdGV4dCB7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogc3RhcnQ7XG4gICAgcGFkZGluZy10b3A6IC4yNXJlbTtcbiAgICBwYWRkaW5nLWJvdHRvbTogLjI1cmVtO1xuICB9XG4gIC5iYW5uZXItZXhwYW5kZWQge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cbn0iXSwic291cmNlUm9vdCI6IiJ9 */</style><style>#home[_ngcontent-vnn-c22] {
-  padding-top: 0px;
-  padding-bottom: 0px;
-  width: calc(100% - 180px);
-  max-width: 1080px;
-  margin: auto;
-  line-height: 30px;
-}
-#home[_ngcontent-vnn-c22]   .section-heading[_ngcontent-vnn-c22] {
-  font-size: 28px;
-  letter-spacing: 1px;
-  font-weight: 600;
-  color: #474747;
-  margin-top: 60px;
-}
-#home[_ngcontent-vnn-c22]   .section-paragraph[_ngcontent-vnn-c22] {
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0.37px;
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22] {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22] {
-  padding: 25px;
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22]   .icon-and-step-name[_ngcontent-vnn-c22] {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22]   .icon-and-step-name[_ngcontent-vnn-c22]   .step-icon[_ngcontent-vnn-c22] {
-  height: 72px;
-  width: 72px;
-  background: var(--fs-green);
-  border-radius: 100%;
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22]   .icon-and-step-name[_ngcontent-vnn-c22]   .step-icon[_ngcontent-vnn-c22]   img[_ngcontent-vnn-c22] {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22]   .icon-and-step-name[_ngcontent-vnn-c22]   .step-name[_ngcontent-vnn-c22] {
-  margin-top: 5px;
-  font-size: 20px;
-  font-weight: bold;
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22]   .step-instuctions[_ngcontent-vnn-c22] {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 16px;
-  line-height: 28px;
-  text-align: center;
-}
-#home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22]   .step-instuctions[_ngcontent-vnn-c22]   .step-title[_ngcontent-vnn-c22] {
-  font-weight: bold;
-}
-#home[_ngcontent-vnn-c22]   app-esri-map[_ngcontent-vnn-c22] {
-  margin-top: 40px;
-  position: relative;
-  left: -90px;
-  width: calc(100% + 180px);
-  display: inherit;
-}
-
-@media (max-width: 420px) {
-  #home[_ngcontent-vnn-c22] {
-    width: calc(100% - 40px);
-    padding: 0px 20px;
-  }
-  #home[_ngcontent-vnn-c22]   app-esri-map[_ngcontent-vnn-c22] {
-    margin-top: 40px;
-    position: relative;
-    left: 0px;
-    width: 100%;
-    display: inherit;
-  }
-}
-@media (max-width: 1023px) {
-  #home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22] {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-@media (max-width: 639px) {
-  #home[_ngcontent-vnn-c22] {
-    width: calc(100% - 40px);
-  }
-  #home[_ngcontent-vnn-c22]   #how-it-works[_ngcontent-vnn-c22] {
-    grid-template-columns: 1fr;
-  }
-  #home[_ngcontent-vnn-c22]   .step[_ngcontent-vnn-c22] {
-    width: 60%;
-    margin: auto;
-  }
-}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbWFpbi1sYW5kaW5nL21haW4tbGFuZGluZy5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0VBQ0EsaUJBQUE7QUFDRjtBQUFFO0VBQ0UsZUFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7QUFFSjtBQUFFO0VBQ0UsZUFBQTtFQUNBLGdCQUFBO0VBQ0Esc0JBQUE7QUFFSjtBQUFFO0VBQ0UsYUFBQTtFQUNBLHNDQUFBO0FBRUo7QUFESTtFQUNFLGFBQUE7QUFHTjtBQUZNO0VBQ0UsYUFBQTtFQUNBLHNCQUFBO0VBQ0EsdUJBQUE7RUFDQSxtQkFBQTtFQUNBLG1CQUFBO0FBSVI7QUFIUTtFQUNFLFlBQUE7RUFDQSxXQUFBO0VBQ0EsMkJBQUE7RUFDQSxtQkFBQTtBQUtWO0FBSlU7RUFDRSxrQkFBQTtFQUNBLFNBQUE7RUFDQSxRQUFBO0VBQ0EsZ0NBQUE7QUFNWjtBQUhRO0VBQ0UsZUFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtBQUtWO0FBRk07RUFDRSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtFQUNBLGtCQUFBO0FBSVI7QUFIUTtFQUNFLGlCQUFBO0FBS1Y7QUFBRTtFQUNFLGdCQUFBO0VBQ0Esa0JBQUE7RUFDQSxXQUFBO0VBQ0EseUJBQUE7RUFDQSxnQkFBQTtBQUVKOztBQUVBO0VBQ0U7SUFDRSx3QkFBQTtJQUNBLGlCQUFBO0VBQ0Y7RUFBRTtJQUNFLGdCQUFBO0lBQ0Esa0JBQUE7SUFDQSxTQUFBO0lBQ0EsV0FBQTtJQUNBLGdCQUFBO0VBRUo7QUFDRjtBQUVBO0VBRUk7SUFDRSw4QkFBQTtFQURKO0FBQ0Y7QUFLQTtFQUNFO0lBQ0Usd0JBQUE7RUFIRjtFQUlFO0lBQ0UsMEJBQUE7RUFGSjtFQUlFO0lBQ0UsVUFBQTtJQUNBLFlBQUE7RUFGSjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiI2hvbWUge1xuICBwYWRkaW5nLXRvcDogMHB4O1xuICBwYWRkaW5nLWJvdHRvbTogMHB4O1xuICB3aWR0aDogY2FsYygxMDAlIC0gMTgwcHgpO1xuICBtYXgtd2lkdGg6IDEwODBweDtcbiAgbWFyZ2luOiBhdXRvO1xuICBsaW5lLWhlaWdodDogMzBweDtcbiAgLnNlY3Rpb24taGVhZGluZyB7XG4gICAgZm9udC1zaXplOiAyOHB4O1xuICAgIGxldHRlci1zcGFjaW5nOiAxcHg7XG4gICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICBjb2xvcjogIzQ3NDc0NztcbiAgICBtYXJnaW4tdG9wOiA2MHB4O1xuICB9XG4gIC5zZWN0aW9uLXBhcmFncmFwaCB7XG4gICAgZm9udC1zaXplOiAxNnB4O1xuICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgbGV0dGVyLXNwYWNpbmc6IDAuMzdweDtcbiAgfVxuICAjaG93LWl0LXdvcmtzIHtcbiAgICBkaXNwbGF5OiBncmlkO1xuICAgIGdyaWQtdGVtcGxhdGUtY29sdW1uczogMWZyIDFmciAxZnIgMWZyO1xuICAgIC5zdGVwIHtcbiAgICAgIHBhZGRpbmc6IDI1cHg7XG4gICAgICAuaWNvbi1hbmQtc3RlcC1uYW1lIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIG1hcmdpbi1ib3R0b206IDIwcHg7XG4gICAgICAgIC5zdGVwLWljb24ge1xuICAgICAgICAgIGhlaWdodDogNzJweDtcbiAgICAgICAgICB3aWR0aDogNzJweDtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1mcy1ncmVlbik7XG4gICAgICAgICAgYm9yZGVyLXJhZGl1czogMTAwJTtcbiAgICAgICAgICBpbWcge1xuICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgICAgICAgbGVmdDogNTAlO1xuICAgICAgICAgICAgdG9wOiA1MCU7XG4gICAgICAgICAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICAgICAgLnN0ZXAtbmFtZSB7XG4gICAgICAgICAgbWFyZ2luLXRvcDogNXB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICAgICAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgICAgLnN0ZXAtaW5zdHVjdGlvbnMge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiAyOHB4O1xuICAgICAgICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gICAgICAgIC5zdGVwLXRpdGxlIHtcbiAgICAgICAgICBmb250LXdlaWdodDogYm9sZDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxuICBhcHAtZXNyaS1tYXAge1xuICAgIG1hcmdpbi10b3A6IDQwcHg7XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGxlZnQ6IC05MHB4O1xuICAgIHdpZHRoOiBjYWxjKDEwMCUgKyAxODBweCk7XG4gICAgZGlzcGxheTogaW5oZXJpdDtcbiAgfVxufVxuXG5AbWVkaWEgKG1heC13aWR0aDogNDIwcHgpIHtcbiAgI2hvbWUge1xuICAgIHdpZHRoOiBjYWxjKDEwMCUgLSA0MHB4KTtcbiAgICBwYWRkaW5nOiAwcHggMjBweDtcbiAgICBhcHAtZXNyaS1tYXAge1xuICAgICAgbWFyZ2luLXRvcDogNDBweDtcbiAgICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICAgIGxlZnQ6IDBweDtcbiAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgZGlzcGxheTogaW5oZXJpdDtcbiAgICB9XG4gIH1cbn1cblxuQG1lZGlhIChtYXgtd2lkdGg6IDEwMjNweCkge1xuICAjaG9tZSB7XG4gICAgI2hvdy1pdC13b3JrcyB7XG4gICAgICBncmlkLXRlbXBsYXRlLWNvbHVtbnM6IDFmciAxZnI7XG4gICAgfVxuICB9XG59XG5cbkBtZWRpYSAobWF4LXdpZHRoOiA2MzlweCkge1xuICAjaG9tZSB7XG4gICAgd2lkdGg6IGNhbGMoMTAwJSAtIDQwcHgpO1xuICAgICNob3ctaXQtd29ya3Mge1xuICAgICAgZ3JpZC10ZW1wbGF0ZS1jb2x1bW5zOiAxZnI7XG4gICAgfVxuICAgIC5zdGVwIHtcbiAgICAgIHdpZHRoOiA2MCU7XG4gICAgICBtYXJnaW46IGF1dG87XG4gICAgfVxuICB9XG59XG4iXSwic291cmNlUm9vdCI6IiJ9 */</style><meta name="description" content="Use Open Forest to apply for Non-Commercial Group Useor Temporary Outfitting and Guiding permits with the United States Forest Service."><meta name="keywords" content="Angular, Meta Service"><style>#forest-finder-error[_ngcontent-vnn-c24] {
-  height: 2rem;
-}
-#forest-finder-error[_ngcontent-vnn-c24]   span[_ngcontent-vnn-c24] {
-  color: #DD9C92 !important;
-}
-#forest-finder-error.hidden[_ngcontent-vnn-c24] {
-  visibility: hidden;
-}
-
-#forest-finder-submit[_ngcontent-vnn-c24] {
-  width: 60%;
-  height: 40px;
-  margin: auto;
-}
-
-.forest-hero[_ngcontent-vnn-c24] {
-  background-size: cover;
-  background-position: center;
-  background-image: url(/assets/img/firewood.jpeg);
-}
-.forest-hero.dot-0[_ngcontent-vnn-c24] {
-  background-image: url(/assets/img/firewood.jpeg);
-}
-.forest-hero.dot-1[_ngcontent-vnn-c24] {
-  background-image: url(/assets/img/site-wide/firewood.jpg);
-}
-.forest-hero.dot-2[_ngcontent-vnn-c24] {
-  background-image: url(/assets/img/forests/flathead.jpg);
-}
-.forest-hero.dot-3[_ngcontent-vnn-c24] {
-  background-image: url(/assets/img/site-wide/firewood_2.jpg);
-}
-.forest-hero.dot-4[_ngcontent-vnn-c24] {
-  background-image: url(/assets/img/site-wide/berries.jpg);
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24] {
-  font-family: sans-serif;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  position: relative;
-  width: calc(100% - 180px);
-  height: 450px;
-  padding: 10px 0px;
-  max-width: 1080px;
-  margin: auto;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   #forest-finder-form[_ngcontent-vnn-c24] {
-  display: flex;
-  flex-direction: column;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   #forest-finder-form[_ngcontent-vnn-c24]   label[_ngcontent-vnn-c24] {
-  margin-top: 0px;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   #forest-finder-form[_ngcontent-vnn-c24]   label[_ngcontent-vnn-c24]   span[_ngcontent-vnn-c24] {
-  font-weight: normal;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   #forest-finder-form[_ngcontent-vnn-c24]   form[_ngcontent-vnn-c24] {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .forest-picker-callout[_ngcontent-vnn-c24] {
-  background: white;
-  color: var(--primary-font);
-  border-radius: 15px;
-  padding: 25px;
-  width: 360px;
-  line-height: 22px;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .forest-picker-callout[_ngcontent-vnn-c24]   .callout-title[_ngcontent-vnn-c24] {
-  font-size: 20px;
-  font-weight: bold;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .forest-picker-callout[_ngcontent-vnn-c24]   p[_ngcontent-vnn-c24] {
-  font-size: 14px;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .welcome-callout[_ngcontent-vnn-c24] {
-  font-size: 32px;
-  background: rgba(71, 71, 71, 0.8);
-  color: white;
-  max-width: 100%;
-  width: calc(70% - 115px);
-  padding: 1.7rem;
-  margin-left: 50px;
-  letter-spacing: 2.5px;
-  font-weight: 100;
-  font-family: sans-serif;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .hero-dots[_ngcontent-vnn-c24] {
-  position: absolute;
-  bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .hero-dots[_ngcontent-vnn-c24]   .hero-dot[_ngcontent-vnn-c24] {
-  cursor: pointer;
-  display: flex;
-  width: 10px;
-  height: 10px;
-  border-radius: 100%;
-  border: 1px solid white;
-  background: white;
-  margin: 3px;
-}
-.forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .hero-dots[_ngcontent-vnn-c24]   .hero-dot.selected[_ngcontent-vnn-c24] {
-  background: rgba(1, 1, 1, 0.3);
-}
-
-#forests-dropdown[_ngcontent-vnn-c24] {
-  margin-bottom: 10px;
-}
-
-app-dropdown[_ngcontent-vnn-c24]    .dropdown-container {
-  flex-direction: column;
-  align-items: start;
-}
-app-dropdown[_ngcontent-vnn-c24]    .dropdown-container .dropdown {
-  width: calc(100% - 32px);
-  white-space: nowrap;
-  overflow: hidden;
-  height: 22px;
-}
-app-dropdown[_ngcontent-vnn-c24]    .dropdown-container .dropdown .value {
-  overflow: hidden;
-}
-app-dropdown[_ngcontent-vnn-c24]    .dropdown-container .menu {
-  max-height: none;
-  min-width: 100%;
-  left: 0;
-}
-
-@media screen and (max-width: 1023px) {
-  .forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24] {
-    width: 95%;
-  }
-  .forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .hero-dots[_ngcontent-vnn-c24] {
-    display: none;
-  }
-  .forest-hero[_ngcontent-vnn-c24]   .welcome-callout[_ngcontent-vnn-c24] {
-    display: none;
-  }
-}
-@media screen and (max-width: 639px) {
-  .forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .forest-picker-callout[_ngcontent-vnn-c24] {
-    line-height: normal;
-  }
-}
-@media screen and (max-width: 440px) {
-  .forest-hero[_ngcontent-vnn-c24]   .forest-picker-hero[_ngcontent-vnn-c24]   .forest-picker-callout[_ngcontent-vnn-c24] {
-    width: 90%;
-  }
-}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvZm9yZXN0cy9mb3Jlc3QtZmluZGVyL2ZvcmVzdC1maW5kZXIuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLFlBQUE7QUFDRjtBQUFFO0VBQ0UseUJBQUE7QUFFSjtBQUFFO0VBQ0Usa0JBQUE7QUFFSjs7QUFFQTtFQUNFLFVBQUE7RUFDQSxZQUFBO0VBQ0EsWUFBQTtBQUNGOztBQUVBO0VBQ0Usc0JBQUE7RUFDQSwyQkFBQTtFQUNBLGdEQUFBO0FBQ0Y7QUFBRTtFQUNFLGdEQUFBO0FBRUo7QUFBRTtFQUNFLHlEQUFBO0FBRUo7QUFBRTtFQUNFLHVEQUFBO0FBRUo7QUFBRTtFQUNFLDJEQUFBO0FBRUo7QUFBRTtFQUNFLHdEQUFBO0FBRUo7QUFBRTtFQUNFLHVCQUFBO0VBQ0EsYUFBQTtFQUNBLDZCQUFBO0VBQ0EsbUJBQUE7RUFDQSxrQkFBQTtFQUNBLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLGlCQUFBO0VBQ0EsaUJBQUE7RUFDQSxZQUFBO0FBRUo7QUFESTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtBQUdOO0FBRk07RUFDRSxlQUFBO0FBSVI7QUFIUTtFQUNFLG1CQUFBO0FBS1Y7QUFGTTtFQUNFLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFdBQUE7QUFJUjtBQURJO0VBQ0UsaUJBQUE7RUFDQSwwQkFBQTtFQUNBLG1CQUFBO0VBQ0EsYUFBQTtFQUNBLFlBQUE7RUFDQSxpQkFBQTtBQUdOO0FBRk07RUFDRSxlQUFBO0VBQ0EsaUJBQUE7QUFJUjtBQUZNO0VBQ0UsZUFBQTtBQUlSO0FBREk7RUFDRSxlQUFBO0VBQ0EsaUNBQUE7RUFDQSxZQUFBO0VBQ0EsZUFBQTtFQUNBLHdCQUFBO0VBQ0EsZUFBQTtFQUNBLGlCQUFBO0VBQ0EscUJBQUE7RUFDQSxnQkFBQTtFQUNBLHVCQUFBO0FBR047QUFESTtFQUNFLGtCQUFBO0VBQ0EsWUFBQTtFQUNBLGFBQUE7RUFDQSw4QkFBQTtFQUNBLG1CQUFBO0FBR047QUFGTTtFQUNFLGVBQUE7RUFDQSxhQUFBO0VBQ0EsV0FBQTtFQUNBLFlBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsaUJBQUE7RUFDQSxXQUFBO0FBSVI7QUFIUTtFQUNFLDhCQUFBO0FBS1Y7O0FBQ0E7RUFDRSxtQkFBQTtBQUVGOztBQUNFO0VBQ0Usc0JBQUE7RUFDQSxrQkFBQTtBQUVKO0FBREk7RUFDRSx3QkFBQTtFQUNBLG1CQUFBO0VBQ0EsZ0JBQUE7RUFDQSxZQUFBO0FBR047QUFGTTtFQUNFLGdCQUFBO0FBSVI7QUFESTtFQUNFLGdCQUFBO0VBQ0EsZUFBQTtFQUNBLE9BQUE7QUFHTjs7QUFFQTtFQUVJO0lBQ0UsVUFBQTtFQUFKO0VBQ0k7SUFDRSxhQUFBO0VBQ047RUFFRTtJQUNFLGFBQUE7RUFBSjtBQUNGO0FBSUE7RUFHTTtJQUNFLG1CQUFBO0VBSk47QUFDRjtBQVNBO0VBR007SUFDRSxVQUFBO0VBVE47QUFDRiIsInNvdXJjZXNDb250ZW50IjpbIiNmb3Jlc3QtZmluZGVyLWVycm9yIHtcbiAgaGVpZ2h0OiAycmVtO1xuICBzcGFuIHtcbiAgICBjb2xvcjogI0REOUM5MiAhaW1wb3J0YW50O1xuICB9XG4gICYuaGlkZGVuIHtcbiAgICB2aXNpYmlsaXR5OiBoaWRkZW47XG4gIH1cbn1cblxuI2ZvcmVzdC1maW5kZXItc3VibWl0IHtcbiAgd2lkdGg6IDYwJTtcbiAgaGVpZ2h0OiA0MHB4O1xuICBtYXJnaW46IGF1dG87XG59XG5cbi5mb3Jlc3QtaGVybyB7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG4gIGJhY2tncm91bmQtcG9zaXRpb246IGNlbnRlcjtcbiAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvaW1nL2ZpcmV3b29kLmpwZWcpO1xuICAmLmRvdC0wIHtcbiAgICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoL2Fzc2V0cy9pbWcvZmlyZXdvb2QuanBlZyk7XG4gIH1cbiAgJi5kb3QtMSB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvaW1nL3NpdGUtd2lkZS9maXJld29vZC5qcGcpO1xuICB9XG4gICYuZG90LTIge1xuICAgIGJhY2tncm91bmQtaW1hZ2U6IHVybCgvYXNzZXRzL2ltZy9mb3Jlc3RzL2ZsYXRoZWFkLmpwZyk7XG4gIH1cbiAgJi5kb3QtMyB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvaW1nL3NpdGUtd2lkZS9maXJld29vZF8yLmpwZyk7XG4gIH1cbiAgJi5kb3QtNCB7XG4gICAgYmFja2dyb3VuZC1pbWFnZTogdXJsKC9hc3NldHMvaW1nL3NpdGUtd2lkZS9iZXJyaWVzLmpwZyk7XG4gIH1cbiAgLmZvcmVzdC1waWNrZXItaGVybyB7XG4gICAgZm9udC1mYW1pbHk6IHNhbnMtc2VyaWY7IC8vc3dhcCB0aGlzIHdpdGggcHVibGljIHNhbnMgb25jZSBpdCdzIGluXG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB3aWR0aDogY2FsYygxMDAlIC0gMTgwcHgpO1xuICAgIGhlaWdodDogNDUwcHg7XG4gICAgcGFkZGluZzogMTBweCAwcHg7XG4gICAgbWF4LXdpZHRoOiAxMDgwcHg7XG4gICAgbWFyZ2luOiBhdXRvO1xuICAgICNmb3Jlc3QtZmluZGVyLWZvcm0ge1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICBsYWJlbCB7XG4gICAgICAgIG1hcmdpbi10b3A6IDBweDtcbiAgICAgICAgc3BhbiB7XG4gICAgICAgICAgZm9udC13ZWlnaHQ6IG5vcm1hbDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgICAgZm9ybSB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgfVxuICAgIH1cbiAgICAuZm9yZXN0LXBpY2tlci1jYWxsb3V0IHtcbiAgICAgIGJhY2tncm91bmQ6IHdoaXRlO1xuICAgICAgY29sb3I6IHZhcigtLXByaW1hcnktZm9udCk7XG4gICAgICBib3JkZXItcmFkaXVzOiAxNXB4O1xuICAgICAgcGFkZGluZzogMjVweDtcbiAgICAgIHdpZHRoOiAzNjBweDtcbiAgICAgIGxpbmUtaGVpZ2h0OiAyMnB4O1xuICAgICAgLmNhbGxvdXQtdGl0bGUge1xuICAgICAgICBmb250LXNpemU6IDIwcHg7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiBib2xkO1xuICAgICAgfVxuICAgICAgcCB7XG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgIH1cbiAgICB9XG4gICAgLndlbGNvbWUtY2FsbG91dCB7XG4gICAgICBmb250LXNpemU6IDMycHg7XG4gICAgICBiYWNrZ3JvdW5kOiByZ2JhKDcxLCA3MSwgNzEsIC44KTtcbiAgICAgIGNvbG9yOiB3aGl0ZTtcbiAgICAgIG1heC13aWR0aDogMTAwJTtcbiAgICAgIHdpZHRoOiBjYWxjKDcwJSAtIDExNXB4KTtcbiAgICAgIHBhZGRpbmc6IDEuN3JlbTtcbiAgICAgIG1hcmdpbi1sZWZ0OiA1MHB4O1xuICAgICAgbGV0dGVyLXNwYWNpbmc6IDIuNXB4O1xuICAgICAgZm9udC13ZWlnaHQ6IDEwMDtcbiAgICAgIGZvbnQtZmFtaWx5OiBzYW5zLXNlcmlmO1xuICAgIH1cbiAgICAuaGVyby1kb3RzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMTVweDtcbiAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgLmhlcm8tZG90IHtcbiAgICAgICAgY3Vyc29yOiBwb2ludGVyO1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICB3aWR0aDogMTBweDtcbiAgICAgICAgaGVpZ2h0OiAxMHB4O1xuICAgICAgICBib3JkZXItcmFkaXVzOiAxMDAlO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB3aGl0ZTtcbiAgICAgICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgICAgIG1hcmdpbjogM3B4O1xuICAgICAgICAmLnNlbGVjdGVkIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDEsIDEsIDEsIC4zKTtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuI2ZvcmVzdHMtZHJvcGRvd24ge1xuICBtYXJnaW4tYm90dG9tOiAxMHB4O1xufVxuYXBwLWRyb3Bkb3duIHtcbiAgOjpuZy1kZWVwLmRyb3Bkb3duLWNvbnRhaW5lciB7XG4gICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgICBhbGlnbi1pdGVtczogc3RhcnQ7XG4gICAgLmRyb3Bkb3duIHtcbiAgICAgIHdpZHRoOiBjYWxjKDEwMCUgLSAzMnB4KTtcbiAgICAgIHdoaXRlLXNwYWNlOiBub3dyYXA7XG4gICAgICBvdmVyZmxvdzogaGlkZGVuO1xuICAgICAgaGVpZ2h0OiAyMnB4O1xuICAgICAgLnZhbHVlIHtcbiAgICAgICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICAgIH1cbiAgICB9XG4gICAgLm1lbnUge1xuICAgICAgbWF4LWhlaWdodDogbm9uZTtcbiAgICAgIG1pbi13aWR0aDogMTAwJTtcbiAgICAgIGxlZnQ6IDA7XG4gICAgfVxuICB9XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDEwMjNweCkge1xuICAuZm9yZXN0LWhlcm8ge1xuICAgIC5mb3Jlc3QtcGlja2VyLWhlcm8ge1xuICAgICAgd2lkdGg6IDk1JTtcbiAgICAgIC5oZXJvLWRvdHMge1xuICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgICAgfVxuICAgIH1cbiAgICAud2VsY29tZS1jYWxsb3V0IHtcbiAgICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgfVxuICB9XG59XG5cbkBtZWRpYSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDYzOXB4KSB7XG4gIC5mb3Jlc3QtaGVybyB7XG4gICAgLmZvcmVzdC1waWNrZXItaGVybyB7XG4gICAgICAuZm9yZXN0LXBpY2tlci1jYWxsb3V0IHtcbiAgICAgICAgbGluZS1oZWlnaHQ6IG5vcm1hbDtcbiAgICAgIH1cbiAgICB9XG4gIH1cbn1cblxuQG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNDQwcHgpIHtcbiAgLmZvcmVzdC1oZXJvIHtcbiAgICAuZm9yZXN0LXBpY2tlci1oZXJvIHtcbiAgICAgIC5mb3Jlc3QtcGlja2VyLWNhbGxvdXQge1xuICAgICAgICB3aWR0aDogOTAlO1xuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style><meta name="description" content="Use Open Forest to purchase a Firwood permit with the United States Forest Service."><style>.label[_ngcontent-vnn-c16] {
-  font-size: 14px;
-  margin-right: 10px;
-  position: relative;
-  top: 0px;
-}
-.label[_ngcontent-vnn-c16]   .required-asterisk[_ngcontent-vnn-c16] {
-  color: red;
-}
-
-.dropdown[_ngcontent-vnn-c16] {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  border: 1px solid #b3b3b3;
-  border-radius: 5px;
-  padding: 0.65rem;
-  margin-top: 0.25rem;
-  justify-content: space-between;
-  width: 100%;
-  padding-bottom: 5px;
-}
-.dropdown[_ngcontent-vnn-c16]   .value[_ngcontent-vnn-c16] {
-  cursor: pointer;
-  position: relative;
-  top: -3px;
-  font-size: 14px;
-}
-.dropdown[_ngcontent-vnn-c16]   svg[_ngcontent-vnn-c16] {
-  width: 20px;
-  height: 20px;
-  font-size: 20px;
-  position: relative;
-  left: 5px;
-  top: -3px;
-}
-
-.error[_ngcontent-vnn-c16] {
-  border: 1px solid #cc0000;
-}
-
-.menu[_ngcontent-vnn-c16] {
-  position: absolute;
-  z-index: 2000;
-  background: white;
-  color: #333333;
-  text-align: center;
-  border-radius: 4px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 2px 4px 0px;
-  align-items: center;
-  max-height: 170px;
-  overflow: auto;
-}
-.menu.up[_ngcontent-vnn-c16] {
-  bottom: 28px;
-}
-.menu.down[_ngcontent-vnn-c16] {
-  top: 40px;
-}
-.menu[_ngcontent-vnn-c16]   span[_ngcontent-vnn-c16] {
-  white-space: nowrap;
-  font-size: 14px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  padding: 15px 20px;
-  min-height: 20px;
-}
-.menu[_ngcontent-vnn-c16]   span[_ngcontent-vnn-c16]:hover {
-  background: rgba(94, 159, 105, 0.15);
-}
-
-.dropdown-container[_ngcontent-vnn-c16] {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-.dropdown-container.disabled[_ngcontent-vnn-c16] {
-  color: gray;
-  cursor: not-allowed;
-}
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvc2hhcmVkL2Ryb3Bkb3duL2Ryb3Bkb3duLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsZUFBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSxRQUFBO0FBQ0Y7QUFBRTtFQUNFLFVBQUE7QUFFSjs7QUFDQTtFQUNFLGtCQUFBO0VBQ0EsVUFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0Esa0JBQUE7RUFFQSxnQkFBQTtFQUNBLG1CQUFBO0VBQ0EsOEJBQUE7RUFDQSxXQUFBO0VBQ0EsbUJBQUE7QUFDRjtBQUFFO0VBQ0UsZUFBQTtFQUNBLGtCQUFBO0VBQ0EsU0FBQTtFQUNBLGVBQUE7QUFFSjtBQUFFO0VBQ0UsV0FBQTtFQUNBLFlBQUE7RUFDQSxlQUFBO0VBQ0Esa0JBQUE7RUFDQSxTQUFBO0VBQ0EsU0FBQTtBQUVKOztBQUVBO0VBQ0UseUJBQUE7QUFDRjs7QUFFQTtFQUNFLGtCQUFBO0VBQ0EsYUFBQTtFQUNBLGlCQUFBO0VBQ0EsY0FBQTtFQUNBLGtCQUFBO0VBQ0Esa0JBQUE7RUFDQSw4Q0FBQTtFQUNBLG1CQUFBO0VBT0EsaUJBQUE7RUFDQSxjQUFBO0FBTEY7QUFGRTtFQUNFLFlBQUE7QUFJSjtBQUZFO0VBQ0UsU0FBQTtBQUlKO0FBQUU7RUFDRSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxhQUFBO0VBQ0EsMkJBQUE7RUFDQSxtQkFBQTtFQUNBLGVBQUE7RUFDQSxrQkFBQTtFQUNBLHVCQUFBO0VBQ0EsZ0JBQUE7RUFDQSxrQkFBQTtFQUNBLGdCQUFBO0FBRUo7QUFESTtFQUNFLG9DQUFBO0FBR047O0FBQ0E7RUFDRSxrQkFBQTtFQUNBLGFBQUE7RUFDQSxtQkFBQTtBQUVGO0FBREU7RUFDRSxXQUFBO0VBQ0EsbUJBQUE7QUFHSiIsInNvdXJjZXNDb250ZW50IjpbIi5sYWJlbCB7XG4gIGZvbnQtc2l6ZTogMTRweDtcbiAgbWFyZ2luLXJpZ2h0OiAxMHB4O1xuICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gIHRvcDogMHB4O1xuICAucmVxdWlyZWQtYXN0ZXJpc2sge1xuICAgIGNvbG9yOiByZWQ7XG4gIH1cbn1cbi5kcm9wZG93biB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgei1pbmRleDogMTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYm9yZGVyOiAxcHggc29saWQgI2IzYjNiMztcbiAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAvL3BhZGRpbmc6IDhweCAxNXB4IDNweCAxNXB4O1xuICBwYWRkaW5nOiAuNjVyZW07XG4gIG1hcmdpbi10b3A6IDAuMjVyZW07XG4gIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgd2lkdGg6IDEwMCU7XG4gIHBhZGRpbmctYm90dG9tOiA1cHg7XG4gIC52YWx1ZSB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICB0b3A6IC0zcHg7XG4gICAgZm9udC1zaXplOiAxNHB4O1xuICB9XG4gIHN2ZyB7XG4gICAgd2lkdGg6IDIwcHg7XG4gICAgaGVpZ2h0OiAyMHB4O1xuICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgbGVmdDogNXB4O1xuICAgIHRvcDogLTNweDtcbiAgfVxufVxuXG4uZXJyb3Ige1xuICBib3JkZXI6IDFweCBzb2xpZCAjY2MwMDAwO1xufVxuXG4ubWVudSB7XG4gIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgei1pbmRleDogMjAwMDtcbiAgYmFja2dyb3VuZDogd2hpdGU7XG4gIGNvbG9yOiAjMzMzMzMzO1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGJvcmRlci1yYWRpdXM6IDRweDtcbiAgYm94LXNoYWRvdzogcmdiYSgwLCAwLCAwLCAuNSkgMHB4IDJweCA0cHggMHB4O1xuICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAmLnVwIHtcbiAgICBib3R0b206IDI4cHg7XG4gIH1cbiAgJi5kb3duIHtcbiAgICB0b3A6IDQwcHg7XG4gIH1cbiAgbWF4LWhlaWdodDogMTcwcHg7XG4gIG92ZXJmbG93OiBhdXRvO1xuICBzcGFuIHtcbiAgICB3aGl0ZS1zcGFjZTogbm93cmFwO1xuICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGp1c3RpZnktY29udGVudDogZmxleC1zdGFydDtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICBwb3NpdGlvbjogcmVsYXRpdmU7XG4gICAgdGV4dC1vdmVyZmxvdzogZWxsaXBzaXM7XG4gICAgb3ZlcmZsb3c6IGhpZGRlbjtcbiAgICBwYWRkaW5nOiAxNXB4IDIwcHg7XG4gICAgbWluLWhlaWdodDogMjBweDtcbiAgICAmOmhvdmVyIHtcbiAgICAgIGJhY2tncm91bmQ6IHJnYmEoOTQsIDE1OSwgMTA1LCAuMTUpO1xuICAgIH1cbiAgfVxufVxuLmRyb3Bkb3duLWNvbnRhaW5lciB7XG4gIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgZGlzcGxheTogZmxleDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgJi5kaXNhYmxlZCB7XG4gICAgY29sb3I6IGdyYXk7XG4gICAgY3Vyc29yOiBub3QtYWxsb3dlZDtcbiAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
-
+  <link rel="stylesheet" type="text/css" href="/fa.css" />
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
+  <link rel="stylesheet" type="text/css" href="/fonts.css" />
+</head>
 <body class="forest-service">
-  <app-root _nghost-vnn-c3="" ng-version="15.2.9"><!----><header _ngcontent-vnn-c3="" id="header" role="banner" class="usa-header usa-header-extended"><div _ngcontent-vnn-c3=""><app-page-header _ngcontent-vnn-c3="" _nghost-vnn-c14=""><!----><div _ngcontent-vnn-c14="" class="header-container"><app-gov-banner _ngcontent-vnn-c14="" _nghost-vnn-c45=""><section _ngcontent-vnn-c45="" class="banner-container"><div _ngcontent-vnn-c45="" class="content-container"><header _ngcontent-vnn-c45=""><div _ngcontent-vnn-c45="" class="header-container"><img _ngcontent-vnn-c45="" src="epermits_files/favicon-57.png" alt="U.S. flag" class="us-flag"><div _ngcontent-vnn-c45="" class="banner-text"><span _ngcontent-vnn-c45="" class="banner-text">An official website of the United States government</span><button _ngcontent-vnn-c45="" class="banner-expand-btn"><div _ngcontent-vnn-c45="" style="display: flex; flex-direction: row; align-items: center; justify-content: center;"><p _ngcontent-vnn-c45="" class="banner-expand-text">Here's how you know</p><div _ngcontent-vnn-c45="" class="arrow down-arrow"></div></div></button></div></div></header><!----></div></section></app-gov-banner><div _ngcontent-vnn-c14="" class="primary-container"><div _ngcontent-vnn-c14="" class="header-left"><img _ngcontent-vnn-c14="" src="epermits_files/usda.png" alt="US Forest Service" class="usda-logo"><img _ngcontent-vnn-c14="" src="epermits_files/usfslogo.svg" alt="US Forest Service" class="fs-logo"><div _ngcontent-vnn-c14="" class="fs-usda-container desktop"><div _ngcontent-vnn-c14="" class="fs-name"> Forest Service </div><div _ngcontent-vnn-c14="" class="usda-name">U.S. DEPARTMENT OF AGRICULTURE</div></div></div><div _ngcontent-vnn-c14="" class="vert-divider desktop"></div><div _ngcontent-vnn-c14="" class="header-right"><span _ngcontent-vnn-c14="">Special Forest Product&nbsp;E‑Permits</span></div><!----><button _ngcontent-vnn-c14="" class="menu-btn mobile">MENU</button></div><div _ngcontent-vnn-c14="" class="secondary-container"><nav _ngcontent-vnn-c14="" aria-label="Header navigation" class="nav-container"><ul _ngcontent-vnn-c14="" class="nav"><li _ngcontent-vnn-c14="" class="primary-nav-item"><button _ngcontent-vnn-c14="" type="button" routerlink="/" class="nav-link usa-current" tabindex="0"><span _ngcontent-vnn-c14="" class="nav-link">Home</span></button></li><li _ngcontent-vnn-c14="" class="primary-nav-item"><button _ngcontent-vnn-c14="" type="button" routerlink="/about" class="nav-link usa-current" tabindex="0"><span _ngcontent-vnn-c14="" class="nav-link">About</span></button></li><li _ngcontent-vnn-c14="" class="primary-nav-item"><button _ngcontent-vnn-c14="" type="button" routerlink="/faq" class="nav-link usa-current" tabindex="0"><span _ngcontent-vnn-c14="" class="nav-link">FAQ</span></button></li><li _ngcontent-vnn-c14="" class="primary-nav-item"><button _ngcontent-vnn-c14="" type="button" routerlink="/feedback" class="nav-link usa-current" tabindex="0"><span _ngcontent-vnn-c14="" class="nav-link">Give Feedback</span></button></li><!----></ul></nav></div><!----></div></app-page-header></div></header><main _ngcontent-vnn-c3="" id="main-content" class="browser-validation-main-content"><router-outlet _ngcontent-vnn-c3=""></router-outlet><app-main-landing _nghost-vnn-c22=""><section _ngcontent-vnn-c22="" id="forest-finder"><app-forest-finder _ngcontent-vnn-c22="" _nghost-vnn-c24=""><section _ngcontent-vnn-c24="" id="forest-finder-intro" class="dot-0 forest-hero"><div _ngcontent-vnn-c24="" class="forest-picker-hero"><div _ngcontent-vnn-c24="" class="forest-picker-callout"><span _ngcontent-vnn-c24="" id="skip-nav-target" tabindex="-1" class="callout-title">Choose Your Permit</span><p _ngcontent-vnn-c24="">The
- USDA Forest Service invites you to obtain permits for select forest 
-products now available online, with more to come in the future. <br _ngcontent-vnn-c24=""><br _ngcontent-vnn-c24=""> Get started by selecting your desired forest and product.</p><div _ngcontent-vnn-c24="" id="forest-finder-form"><form _ngcontent-vnn-c24="" novalidate="" name="forestPickerForm" autocomplete="off" class="usa-forms ng-untouched ng-pristine ng-valid"><span _ngcontent-vnn-c24="" class="select-forest-label">Select your forest</span><app-dropdown _ngcontent-vnn-c24="" label="Select your forest" id="forests-dropdown" expanddirection="down" key="friendly" _nghost-vnn-c16=""><div _ngcontent-vnn-c16="" class="dropdown-container"><div _ngcontent-vnn-c16="" tabindex="0" class="dropdown dropdown-input" aria-label="Select your forest"><span _ngcontent-vnn-c16="" class="value"></span><svg _ngcontent-vnn-c16="" alt="Menu Button" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="value"><path _ngcontent-vnn-c16="" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></div><!----></div></app-dropdown><span _ngcontent-vnn-c24="" class="select-product">Select a product</span><app-dropdown _ngcontent-vnn-c24="" label="Select a product" expanddirection="down" key="friendly" _nghost-vnn-c16=""><div _ngcontent-vnn-c16="" class="dropdown-container disabled"><div _ngcontent-vnn-c16="" tabindex="0" class="dropdown dropdown-input" aria-label="Select a product"><span _ngcontent-vnn-c16="" class="value"></span><svg _ngcontent-vnn-c16="" alt="Menu Button" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="value"><path _ngcontent-vnn-c16="" d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path></svg></div><!----></div></app-dropdown><div _ngcontent-vnn-c24="" id="forest-finder-error" aria-live="assertive" class="hidden"><!----></div><input _ngcontent-vnn-c24="" role="button" aria-label="Get Your Permit" id="forest-finder-submit" type="submit" value="Get Your Permit" disabled="disabled" class="disabled"></form></div></div><div _ngcontent-vnn-c24="" class="welcome-callout usa-section-light"><span _ngcontent-vnn-c24="">Welcome to Forest Service Special Forest Product E-Permit Application</span></div></div></section></app-forest-finder></section><section _ngcontent-vnn-c22="" id="home"><h1 _ngcontent-vnn-c22="" class="section-heading">How E-Permits Works</h1><div _ngcontent-vnn-c22="" id="how-it-works"><div _ngcontent-vnn-c22="" class="step"><div _ngcontent-vnn-c22="" class="icon-and-step-name"><div _ngcontent-vnn-c22="" class="step-icon"><img _ngcontent-vnn-c22="" src="epermits_files/step-1.svg" alt="Step 1 icon"></div><span _ngcontent-vnn-c22="" class="step-name">Step 1</span></div><div _ngcontent-vnn-c22="" class="step-instuctions"><span _ngcontent-vnn-c22="" class="step-title">Find &amp; Select Your Forest</span><span _ngcontent-vnn-c22="" class="step-text"> From this homepage, select your forest and desired product to get started. </span></div></div><div _ngcontent-vnn-c22="" class="step"><div _ngcontent-vnn-c22="" class="icon-and-step-name"><div _ngcontent-vnn-c22="" class="step-icon"><img _ngcontent-vnn-c22="" src="epermits_files/step-2.svg" alt="Step 2 icon"></div><span _ngcontent-vnn-c22="" class="step-name">Step 2</span></div><div _ngcontent-vnn-c22="" class="step-instuctions"><span _ngcontent-vnn-c22="" class="step-title">Review Permit Details</span><span _ngcontent-vnn-c22="" class="step-text"> Read important information about your permit before you obtain it. </span></div></div><div _ngcontent-vnn-c22="" class="step"><div _ngcontent-vnn-c22="" class="icon-and-step-name"><div _ngcontent-vnn-c22="" class="step-icon"><img _ngcontent-vnn-c22="" src="epermits_files/step-3.svg" alt="Step 3 icon"></div><span _ngcontent-vnn-c22="" class="step-name">Step 3</span></div><div _ngcontent-vnn-c22="" class="step-instuctions"><span _ngcontent-vnn-c22="" class="step-title">Get Your Permit</span><span _ngcontent-vnn-c22="" class="step-text"> Complete your permit form, then pay with Pay.gov using a debit card, credit card, or check to purchase your permit. </span></div></div><div _ngcontent-vnn-c22="" class="step"><div _ngcontent-vnn-c22="" class="icon-and-step-name"><div _ngcontent-vnn-c22="" class="step-icon"><img _ngcontent-vnn-c22="" src="epermits_files/step-4.svg" alt="Step 4 icon"></div><span _ngcontent-vnn-c22="" class="step-name">Step 4</span></div><div _ngcontent-vnn-c22="" class="step-instuctions"><span _ngcontent-vnn-c22="" class="step-title">Print Your Permit</span><span _ngcontent-vnn-c22="" class="step-text"> You will immediately be able to view and print your permit, and will receive a confirmation email to access your permit later. </span></div></div></div><h1 _ngcontent-vnn-c22="" tabindex="-1" class="section-heading">What is E-Permits</h1><p _ngcontent-vnn-c22="" class="section-paragraph what-is-e-permits">
- With E-Permits you can obtain firewood permits for a few forests. More 
-forests and permits for items like berries and mushrooms will be added 
-over time. <br _ngcontent-vnn-c22=""><br _ngcontent-vnn-c22=""><a _ngcontent-vnn-c22="" routerlink="/about" href="https://epermits.fs2c.usda.gov/about">Visit 'About' to learn more</a></p><br _ngcontent-vnn-c22=""><br _ngcontent-vnn-c22=""></section></app-main-landing><!----></main><app-page-footer _ngcontent-vnn-c3="" _nghost-vnn-c13=""><footer _ngcontent-vnn-c13="" class="footer-container"><div _ngcontent-vnn-c13="" class="primary-nav-container"><nav _ngcontent-vnn-c13="" aria-label="Forest Service links navigation"><ul _ngcontent-vnn-c13="" class="footer-primary-nav"><li _ngcontent-vnn-c13="" class="footer-primary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.fs.usda.gov/visit" target="_blank" class="usa-footer-primary-link"> Visit Us </a></li><li _ngcontent-vnn-c13="" class="footer-primary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.fs.usda.gov/managing-land" target="_blank" class="usa-footer-primary-link"> Managing the Land </a></li><li _ngcontent-vnn-c13="" class="footer-primary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.fs.usda.gov/learn" target="_blank" class="usa-footer-primary-link"> Learn </a></li><li _ngcontent-vnn-c13="" class="footer-primary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.fs.usda.gov/science-technology" target="_blank" class="usa-footer-primary-link"> Science and Technology </a></li><li _ngcontent-vnn-c13="" class="footer-primary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.fs.usda.gov/working-with-us" target="_blank" class="usa-footer-primary-link"> Working with Us </a></li><li _ngcontent-vnn-c13="" class="footer-primary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.fs.usda.gov/about-agency" target="_blank" class="usa-footer-primary-link"> About the Agency </a></li><li _ngcontent-vnn-c13="" class="footer-primary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.fs.usda.gov/inside-fs" target="_blank" class="usa-footer-primary-link"> Inside the FS </a></li></ul></nav></div><div _ngcontent-vnn-c13="" class="secondary-container"><div _ngcontent-vnn-c13="" class="secondary-nav-container"><nav _ngcontent-vnn-c13="" aria-label="Footer navigation"><ul _ngcontent-vnn-c13="" class="footer-secondary-nav"><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://ask.usda.gov/s/?utm_source=USDA&amp;utm_medium=homepage&amp;utm_campaign=homepage%20referrals" target="_blank" class="footer-nav-text"> askUSDA </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://ask.usda.gov/s/contactsupport" target="_blank" class="footer-nav-text"> Contact Us </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/sitemap" target="_blank" class="footer-nav-text"> Site Map </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/policies-and-links" target="_blank" class="footer-nav-text"> Policies &amp; Links </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/our-agency/about-usda/performance" target="_blank" class="footer-nav-text"> Our Performance </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/our-agency/careers" target="_blank" class="footer-nav-text"> Careers </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://usdaoig.oversight.gov/resources/contractor-fraud" target="_blank" class="footer-nav-text"> Report Fraud on USDA Contracts </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://usdaoig.oversight.gov/" target="_blank" class="footer-nav-text"> Visit OIG </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/plain-writing" target="_blank" class="footer-nav-text"> Plain Writing </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/open" target="_blank" class="footer-nav-text"> Open </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/ogc/office-information-affairs/foia-division" target="_blank" class="footer-nav-text"> FOIA </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/accessibility-statement" target="_blank" class="footer-nav-text"> Accessibility Statement </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/privacy-policy" target="_blank" class="footer-nav-text"> Privacy Policy </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/non-discrimination-statement" target="_blank" class="footer-nav-text"> Non-Discrimination Statement </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/oascr/civil-rights-statements" target="_blank" class="footer-nav-text"> Anti-Harassment Policy </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/ocio/guidelines-and-compliance-resources/information-quality-activities" target="_blank" class="footer-nav-text"> Information Quality </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usa.gov/" target="_blank" class="footer-nav-text"> USA.gov </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.whitehouse.gov/" target="_blank" class="footer-nav-text"> Whitehouse.gov </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/federal-web-site-inventory" target="_blank" class="footer-nav-text"> eGov </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="mailto:feedback@oc.usda.gov" target="_blank" class="footer-nav-text"> Feedback </a></li><li _ngcontent-vnn-c13="" class="footer-secondary-nav-item"><a _ngcontent-vnn-c13="" href="https://www.usda.gov/nofear" target="_blank" class="footer-nav-text"> No FEAR Act Data </a></li></ul></nav></div></div><div _ngcontent-vnn-c13="" class="tertiary-container"><div _ngcontent-vnn-c13="" class="footer-branding-container"><div _ngcontent-vnn-c13="" class="footer-logos"><img _ngcontent-vnn-c13="" src="epermits_files/usda.svg" alt="USDA" class="fs-footer-logo"><img _ngcontent-vnn-c13="" src="epermits_files/usfslogo.svg" alt="US Forest Service" class="fs-footer-logo"></div><div _ngcontent-vnn-c13="" class="fs-usda-names-container"><span _ngcontent-vnn-c13="" class="fs-name">Forest Service</span><span _ngcontent-vnn-c13="" class="usda-name desktop"> U.S. DEPARTMENT OF AGRICULTURE </span><span _ngcontent-vnn-c13="" class="usda-name mobile"> U.S.D.A. </span></div></div><div _ngcontent-vnn-c13="" class="social-links"><a _ngcontent-vnn-c13="" href="https://twitter.com/forestservice" class="social-link"><img _ngcontent-vnn-c13="" src="epermits_files/social-icon-twitter.svg" alt="Twitter" target="_blank" class="usa-social-image"></a><a _ngcontent-vnn-c13="" href="https://www.facebook.com/USForestService/" class="social-link"><img _ngcontent-vnn-c13="" src="epermits_files/social-icon-facebook.svg" alt="Facebook" target="_blank" class="usa-social-image"></a><a _ngcontent-vnn-c13="" href="https://www.youtube.com/user/usdaForestService" class="social-link"><img _ngcontent-vnn-c13="" src="epermits_files/social-icon-youtube.svg" alt="YouTube" target="_blank" class="usa-social-image"></a><a _ngcontent-vnn-c13="" href="https://www.flickr.com/photos/usforestservice/" class="social-link"><img _ngcontent-vnn-c13="" src="epermits_files/social-icon-flickr.svg" alt="Flickr" target="_blank" class="usa-social-image"></a><a _ngcontent-vnn-c13="" href="https://www.instagram.com/u.s.forestservice/" class="social-link"><img _ngcontent-vnn-c13="" src="epermits_files/social-icon-instagram.svg" alt="Instagram" target="_blank" class="usa-social-image"></a></div></div></footer></app-page-footer></app-root>
-<script src="epermits_files/runtime.js" type="module"></script><script src="epermits_files/polyfills.js" type="module"></script><script src="epermits_files/vendor.js" type="module"></script><script src="epermits_files/main.js" type="module"></script>
 
+  <header id="header" role="banner" class= "usa-header usa-header-extended">
+    <div>
+      <div class="header-container">
+        <section class="banner-container">
+          <div class="content-container">
+            <header>
+              <div class="header-container">
+                <img src="/assets/favicons/favicon-57.png" alt=
+                "U.S. flag" class="us-flag">
+                <div class="banner-text">
+                  <span class="banner-text">An official website of
+                  the United States government</span>
+                  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                    <p class="banner-expand-text"><button class="banner-expand-btn">Heres how you know</button></p>
+                    <div class="arrow down-arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+        </section>
 
-</body></html>
+        <div class="primary-container">
+          <div class="header-left">
+            <img src="../../../assets/img/site-wide/usda.png" alt=
+            "US Forest Service" class="usda-logo"><img src=
+            "/assets/img/site-wide/usfslogo.svg" alt=
+            "US Forest Service" class="fs-logo">
+            <div class="fs-usda-container desktop">
+              <div class="fs-name">
+                Forest Service
+              </div>
+              <div class="usda-name">
+                U.S. DEPARTMENT OF AGRICULTURE
+              </div>
+            </div>
+          </div>
+
+          <div class="vert-divider desktop"></div>
+          <div class="header-right">
+            <span>Special Forest Product&nbsp;E‑Permits</span>
+          </div><!----><button class=
+          "menu-btn mobile">MENU</button>
+        </div>
+
+        <div class="secondary-container">
+          <nav aria-label="Header navigation" class=
+          "nav-container">
+            <ul class="nav">
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/" class="nav-link usa-current" tabindex=
+              "0"><span class="nav-link">Home</span></button></li>
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/about" class="nav-link usa-current"
+              tabindex="0"><span class=
+              "nav-link">About</span></button></li>
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/faq" class="nav-link usa-current"
+              tabindex="0"><span class=
+              "nav-link">FAQ</span></button></li>
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/feedback" class="nav-link usa-current"
+              tabindex="0"><span class="nav-link">Give
+              Feedback</span></button></li><!---->
+            </ul>
+          </nav>
+        </div><!---->
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="browser-validation-main-content">
+    <section id="forest-finder">
+      <section id="forest-finder-intro" class="dot-0 forest-hero">
+        <div class="forest-picker-hero">
+
+          <div class="forest-picker-callout">
+            <span id="skip-nav-target" tabindex="-1" class=
+            "callout-title">Choose Your Permit</span>
+
+            <p>The USDA Forest Service invites you to obtain
+            permits for select forest products now available
+            online, with more to come in the future.<br>
+            <br>
+            Get started by selecting your desired forest and
+            product.</p>
+
+            <div id="forest-finder-form">
+              <form novalidate="" name="forestPickerForm"
+              autocomplete="off" class=
+              "usa-forms ng-untouched ng-pristine ng-valid" id=
+              "forestPickerForm">
+                <span class="select-forest-label">Select your
+                forest</span>
+                <div class="dropdown-container">
+                  <div tabindex="0" class="dropdown dropdown-input"
+                  aria-label="Select your forest">
+                    <svg alt="Menu Button" aria-hidden="true"
+                    focusable="false" xmlns=
+                    "http://www.w3.org/2000/svg" viewbox=
+                    "0 0 24 24" class="value">
+                    <path d=
+                    "M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+                    </path></svg>
+                  </div><!---->
+                </div><span class="select-product">Select a
+                product</span>
+                <div class="dropdown-container disabled">
+                  <div tabindex="0" class="dropdown dropdown-input"
+                  aria-label="Select a product">
+                    <svg alt="Menu Button" aria-hidden="true"
+                    focusable="false" xmlns=
+                    "http://www.w3.org/2000/svg" viewbox=
+                    "0 0 24 24" class="value">
+                    <path d=
+                    "M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+                    </path></svg>
+                  </div><!---->
+                </div>
+                <div id="forest-finder-error" aria-live="assertive"
+                class="hidden">
+                  <!---->
+                </div><input role="button" aria-label=
+                "Get Your Permit" id="forest-finder-submit" type=
+                "submit" value="Get Your Permit" disabled class=
+                "disabled">
+              </form>
+            </div>
+
+          </div>
+          <div class="welcome-callout usa-section-light">
+            <span>Welcome to Forest Service Special Forest Product
+            E-Permit Application</span>
+          </div>
+
+        </div>
+      </section>
+    </section>
+
+    <section id="home">
+      <h1 class="section-heading">How E-Permits Works</h1>
+
+      <div id="how-it-works">
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-1.svg" alt=
+            "Step 1 icon"></div><span class="step-name">Step
+            1</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Find & Select Your
+            Forest</span> <span class="step-text">From this
+            homepage, select your forest and desired product to get
+            started.</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-2.svg" alt=
+            "Step 2 icon"></div><span class="step-name">Step
+            2</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Review Permit Details</span>
+            <span class="step-text">Read important information
+            about your permit before you obtain it.</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-3.svg" alt=
+            "Step 3 icon"></div><span class="step-name">Step
+            3</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Get Your Permit</span>
+            <span class="step-text">Complete your permit form, then
+            pay with Pay.gov using a debit card, credit card, or
+            check to purchase your permit.</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-4.svg" alt=
+            "Step 4 icon"></div><span class="step-name">Step
+            4</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Print Your Permit</span>
+            <span class="step-text">You will immediately be able to
+            view and print your permit, and will receive a
+            confirmation email to access your permit later.</span>
+          </div>
+        </div>
+      </div>
+
+      <h1 tabindex="-1" class="section-heading">What is E-Permits</h1>
+
+      <p class="section-paragraph what-is-e-permits">With E-Permits
+      you can obtain firewood permits for a few forests. More
+      forests and permits for items like berries and mushrooms will
+      be added over time.<br>
+      <br>
+      <a href= "/about.html">Visit 'About' to learn more</a></p><br>
+      <br>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="primary-nav-container">
+      <nav aria-label="Forest Service links navigation">
+        <ul class="footer-primary-nav">
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/visit" target="_blank"
+            class="usa-footer-primary-link">Visit Us</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/managing-land" target=
+            "_blank" class="usa-footer-primary-link">Managing the
+            Land</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/learn" target="_blank"
+            class="usa-footer-primary-link">Learn</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/science-technology"
+            target="_blank" class="usa-footer-primary-link">Science
+            and Technology</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/working-with-us"
+            target="_blank" class="usa-footer-primary-link">Working
+            with Us</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/about-agency" target=
+            "_blank" class="usa-footer-primary-link">About the
+            Agency</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/inside-fs" target=
+            "_blank" class="usa-footer-primary-link">Inside the
+            FS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="secondary-container">
+      <div class="secondary-nav-container">
+        <nav aria-label="Footer navigation">
+          <ul class="footer-secondary-nav">
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://ask.usda.gov/s/?utm_source=USDA&amp;utm_medium=homepage&amp;utm_campaign=homepage%20referrals"
+              target="_blank" class="footer-nav-text">askUSDA</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://ask.usda.gov/s/contactsupport"
+              target="_blank" class="footer-nav-text">Contact
+              Us</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/sitemap" target=
+              "_blank" class="footer-nav-text">Site Map</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/policies-and-links"
+              target="_blank" class="footer-nav-text">Policies &
+              Links</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/our-agency/about-usda/performance"
+              target="_blank" class="footer-nav-text">Our
+              Performance</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/our-agency/careers"
+              target="_blank" class="footer-nav-text">Careers</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://usdaoig.oversight.gov/resources/contractor-fraud"
+              target="_blank" class="footer-nav-text">Report Fraud
+              on USDA Contracts</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://usdaoig.oversight.gov/" target=
+              "_blank" class="footer-nav-text">Visit OIG</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/plain-writing" target=
+              "_blank" class="footer-nav-text">Plain Writing</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/open" target="_blank"
+              class="footer-nav-text">Open</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/ogc/office-information-affairs/foia-division"
+              target="_blank" class="footer-nav-text">FOIA</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/accessibility-statement"
+              target="_blank" class="footer-nav-text">Accessibility
+              Statement</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/privacy-policy" target=
+              "_blank" class="footer-nav-text">Privacy Policy</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/non-discrimination-statement"
+              target="_blank" class=
+              "footer-nav-text">Non-Discrimination Statement</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/oascr/civil-rights-statements"
+              target="_blank" class=
+              "footer-nav-text">Anti-Harassment Policy</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/ocio/guidelines-and-compliance-resources/information-quality-activities"
+              target="_blank" class="footer-nav-text">Information
+              Quality</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usa.gov/" target="_blank" class=
+              "footer-nav-text">USA.gov</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.whitehouse.gov/" target="_blank"
+              class="footer-nav-text">Whitehouse.gov</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/federal-web-site-inventory"
+              target="_blank" class="footer-nav-text">eGov</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="mailto:feedback@oc.usda.gov" target="_blank"
+              class="footer-nav-text">Feedback</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/nofear" target="_blank"
+              class="footer-nav-text">No FEAR Act Data</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="tertiary-container">
+      <div class="footer-branding-container">
+        <div class="footer-logos"><img src=
+        "/assets/img/site-wide/usda.svg" alt="USDA" class=
+        "fs-footer-logo"><img src=
+        "/assets/img/site-wide/usfslogo.svg" alt=
+        "US Forest Service" class="fs-footer-logo"></div>
+        <div class="fs-usda-names-container">
+          <span class="fs-name">Forest Service</span> <span class=
+          "usda-name desktop">U.S. DEPARTMENT OF AGRICULTURE</span>
+          <span class="usda-name mobile">U.S.D.A.</span>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://twitter.com/forestservice" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-twitter.svg" alt=
+        "Twitter" target="_blank" class=
+        "usa-social-image"></a><a href=
+        "https://www.facebook.com/USForestService/" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-facebook.svg" alt=
+        "Facebook" target="_blank" class=
+        "usa-social-image"></a><a href=
+        "https://www.youtube.com/user/usdaForestService" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-youtube.svg" alt=
+        "YouTube" target="_blank" class=
+        "usa-social-image"></a><a href=
+        "https://www.flickr.com/photos/usforestservice/" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-flickr.svg" alt="Flickr"
+        target="_blank" class="usa-social-image"></a><a href=
+        "https://www.instagram.com/u.s.forestservice/" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-instagram.svg" alt=
+        "Instagram" target="_blank" class="usa-social-image"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
