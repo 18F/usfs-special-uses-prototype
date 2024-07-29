@@ -4,8 +4,62 @@
   #main-content  {
     padding-top: 80px;
   }
-
   }
+
+.about {
+  width: calc(100% - 180px);
+  max-width: 1040px;
+  margin: auto;
+}
+.about   .container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 5em;
+}
+.about   .container   .content {
+  padding-right: 20px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.371429px;
+  color: var(--primary-font);
+}
+.about   .container   .content   p {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.about   .container   .img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about   .container   .img-container   .firewood-img {
+  height: 475px;
+}
+.about   .header-text {
+  padding-top: 25px;
+}
+
+@media screen and (max-width: 1000px) and (min-width: 700px) {
+  .about {
+    width: calc(100% - 40px);
+  }
+}
+@media screen and (max-width: 700px) {
+  .about {
+    width: calc(100% - 40px);
+  }
+  .about   .container   .content {
+    width: 100%;
+  }
+  .about   .container   .img-container {
+    display: none;
+  }
+  .about   .container   .container {
+    padding-bottom: 1rem;
+  }
+}
 
 
   .header-container   .primary-container  {
