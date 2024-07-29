@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>USDA Forest Service E-Permits</title>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href= "/assets/favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href= "/assets/favicons/favicon-16x16.png">
+  <link rel="manifest" href= "/assets/favicons/manifest.json">
+  <link rel="mask-icon" href= "/assets/favicons/safari-pinned-tab.svg" color="#2c1e13">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="keywords" content="Forest Service, permitting, permits, christmas trees, national forest, national forests">
+
+  <link rel="stylesheet" type="text/css" href="/fa.css" />
+  <link rel="stylesheet" type="text/css" href="/styles.css" />
+  <link rel="stylesheet" type="text/css" href="/fonts.css" />
+</head>
+<body class="forest-service">
+
+  <header id="header" role="banner" class= "usa-header usa-header-extended">
+    <div>
+      <div class="header-container">
+        <section class="banner-container">
+          <div class="content-container">
+            <header>
+              <div class="header-container">
+                <img src="/assets/favicons/favicon-57.png" alt=
+                "U.S. flag" class="us-flag">
+                <div class="banner-text">
+                  <span class="banner-text">An official website of
+                  the United States government</span>
+                  <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+                    <p class="banner-expand-text"><button class="banner-expand-btn">Heres how you know</button></p>
+                    <div class="arrow down-arrow"></div>
+                  </div>
+                </div>
+              </div>
+            </header>
+          </div>
+        </section>
+
+        <div class="primary-container">
+          <div class="header-left">
+            <img src="../../../assets/img/site-wide/usda.png" alt=
+            "US Forest Service" class="usda-logo"><img src=
+            "/assets/img/site-wide/usfslogo.svg" alt=
+            "US Forest Service" class="fs-logo">
+            <div class="fs-usda-container desktop">
+              <div class="fs-name">
+                Forest Service
+              </div>
+              <div class="usda-name">
+                U.S. DEPARTMENT OF AGRICULTURE
+              </div>
+            </div>
+          </div>
+
+          <div class="vert-divider desktop"></div>
+          <div class="header-right">
+            <span>Special Forest Product&nbsp;E‑Permits</span>
+          </div><!----><button class=
+          "menu-btn mobile">MENU</button>
+        </div>
+
+        <div class="secondary-container">
+          <nav aria-label="Header navigation" class=
+          "nav-container">
+            <ul class="nav">
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/" class="nav-link usa-current" tabindex=
+              "0"><span class="nav-link">Home</span></button></li>
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/about" class="nav-link usa-current"
+              tabindex="0"><span class=
+              "nav-link">About</span></button></li>
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/faq" class="nav-link usa-current"
+              tabindex="0"><span class=
+              "nav-link">FAQ</span></button></li>
+              <li class="primary-nav-item"><button type="button"
+              routerlink="/feedback" class="nav-link usa-current"
+              tabindex="0"><span class="nav-link">Give
+              Feedback</span></button></li><!---->
+            </ul>
+          </nav>
+        </div><!---->
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="browser-validation-main-content">
+    <section id="forest-finder">
+      <section id="forest-finder-intro" class="dot-0 forest-hero">
+        <div class="forest-picker-hero">
+
+          <div class="forest-picker-callout">
+            <span id="skip-nav-target" tabindex="-1" class=
+            "callout-title">Choose Your Permit</span>
+
+            <p>The USDA Forest Service invites you to obtain
+            permits for select forest products now available
+            online, with more to come in the future.<br>
+            <br>
+            Get started by selecting your desired forest and
+            product.</p>
+
+            <div id="forest-finder-form">
+              <form novalidate="" name="forestPickerForm"
+              autocomplete="off" class=
+              "usa-forms ng-untouched ng-pristine ng-valid" id=
+              "forestPickerForm">
+                <span class="select-forest-label">Select your
+                forest</span>
+                <div class="dropdown-container">
+                  <div tabindex="0" class="dropdown dropdown-input"
+                  aria-label="Select your forest">
+                    <svg alt="Menu Button" aria-hidden="true"
+                    focusable="false" xmlns=
+                    "http://www.w3.org/2000/svg" viewbox=
+                    "0 0 24 24" class="value">
+                    <path d=
+                    "M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+                    </path></svg>
+                  </div><!---->
+                </div><span class="select-product">Select a
+                product</span>
+                <div class="dropdown-container disabled">
+                  <div tabindex="0" class="dropdown dropdown-input"
+                  aria-label="Select a product">
+                    <svg alt="Menu Button" aria-hidden="true"
+                    focusable="false" xmlns=
+                    "http://www.w3.org/2000/svg" viewbox=
+                    "0 0 24 24" class="value">
+                    <path d=
+                    "M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z">
+                    </path></svg>
+                  </div><!---->
+                </div>
+                <div id="forest-finder-error" aria-live="assertive"
+                class="hidden">
+                  <!---->
+                </div><input role="button" aria-label=
+                "Get Your Permit" id="forest-finder-submit" type=
+                "submit" value="Get Your Permit" disabled class=
+                "disabled">
+              </form>
+            </div>
+
+          </div>
+          <div class="welcome-callout usa-section-light">
+            <span>Welcome to Forest Service Special Forest Product
+            E-Permit Application</span>
+          </div>
+
+        </div>
+      </section>
+    </section>
+
+    <section id="home">
+      <h1 class="section-heading">How E-Permits Works</h1>
+
+      <div id="how-it-works">
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-1.svg" alt=
+            "Step 1 icon"></div><span class="step-name">Step
+            1</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Find & Select Your
+            Forest</span> <span class="step-text">From this
+            homepage, select your forest and desired product to get
+            started.</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-2.svg" alt=
+            "Step 2 icon"></div><span class="step-name">Step
+            2</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Review Permit Details</span>
+            <span class="step-text">Read important information
+            about your permit before you obtain it.</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-3.svg" alt=
+            "Step 3 icon"></div><span class="step-name">Step
+            3</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Get Your Permit</span>
+            <span class="step-text">Complete your permit form, then
+            pay with Pay.gov using a debit card, credit card, or
+            check to purchase your permit.</span>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="icon-and-step-name">
+            <div class="step-icon"><img src=
+            "assets/img/step-4.svg" alt=
+            "Step 4 icon"></div><span class="step-name">Step
+            4</span>
+          </div>
+          <div class="step-instuctions">
+            <span class="step-title">Print Your Permit</span>
+            <span class="step-text">You will immediately be able to
+            view and print your permit, and will receive a
+            confirmation email to access your permit later.</span>
+          </div>
+        </div>
+      </div>
+
+      <h1 tabindex="-1" class="section-heading">What is E-Permits</h1>
+
+      <p class="section-paragraph what-is-e-permits">With E-Permits
+      you can obtain firewood permits for a few forests. More
+      forests and permits for items like berries and mushrooms will
+      be added over time.<br>
+      <br>
+      <a href= "/about.html">Visit 'About' to learn more</a></p><br>
+      <br>
+    </section>
+  </main>
+
+  <footer class="footer-container">
+    <div class="primary-nav-container">
+      <nav aria-label="Forest Service links navigation">
+        <ul class="footer-primary-nav">
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/visit" target="_blank"
+            class="usa-footer-primary-link">Visit Us</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/managing-land" target=
+            "_blank" class="usa-footer-primary-link">Managing the
+            Land</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/learn" target="_blank"
+            class="usa-footer-primary-link">Learn</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/science-technology"
+            target="_blank" class="usa-footer-primary-link">Science
+            and Technology</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/working-with-us"
+            target="_blank" class="usa-footer-primary-link">Working
+            with Us</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/about-agency" target=
+            "_blank" class="usa-footer-primary-link">About the
+            Agency</a>
+          </li>
+          <li class="footer-primary-nav-item">
+            <a href="https://www.fs.usda.gov/inside-fs" target=
+            "_blank" class="usa-footer-primary-link">Inside the
+            FS</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="secondary-container">
+      <div class="secondary-nav-container">
+        <nav aria-label="Footer navigation">
+          <ul class="footer-secondary-nav">
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://ask.usda.gov/s/?utm_source=USDA&amp;utm_medium=homepage&amp;utm_campaign=homepage%20referrals"
+              target="_blank" class="footer-nav-text">askUSDA</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://ask.usda.gov/s/contactsupport"
+              target="_blank" class="footer-nav-text">Contact
+              Us</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/sitemap" target=
+              "_blank" class="footer-nav-text">Site Map</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/policies-and-links"
+              target="_blank" class="footer-nav-text">Policies &
+              Links</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/our-agency/about-usda/performance"
+              target="_blank" class="footer-nav-text">Our
+              Performance</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/our-agency/careers"
+              target="_blank" class="footer-nav-text">Careers</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://usdaoig.oversight.gov/resources/contractor-fraud"
+              target="_blank" class="footer-nav-text">Report Fraud
+              on USDA Contracts</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://usdaoig.oversight.gov/" target=
+              "_blank" class="footer-nav-text">Visit OIG</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/plain-writing" target=
+              "_blank" class="footer-nav-text">Plain Writing</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/open" target="_blank"
+              class="footer-nav-text">Open</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/ogc/office-information-affairs/foia-division"
+              target="_blank" class="footer-nav-text">FOIA</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/accessibility-statement"
+              target="_blank" class="footer-nav-text">Accessibility
+              Statement</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/privacy-policy" target=
+              "_blank" class="footer-nav-text">Privacy Policy</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/non-discrimination-statement"
+              target="_blank" class=
+              "footer-nav-text">Non-Discrimination Statement</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/oascr/civil-rights-statements"
+              target="_blank" class=
+              "footer-nav-text">Anti-Harassment Policy</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/ocio/guidelines-and-compliance-resources/information-quality-activities"
+              target="_blank" class="footer-nav-text">Information
+              Quality</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usa.gov/" target="_blank" class=
+              "footer-nav-text">USA.gov</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.whitehouse.gov/" target="_blank"
+              class="footer-nav-text">Whitehouse.gov</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href=
+              "https://www.usda.gov/federal-web-site-inventory"
+              target="_blank" class="footer-nav-text">eGov</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="mailto:feedback@oc.usda.gov" target="_blank"
+              class="footer-nav-text">Feedback</a>
+            </li>
+            <li class="footer-secondary-nav-item">
+              <a href="https://www.usda.gov/nofear" target="_blank"
+              class="footer-nav-text">No FEAR Act Data</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <div class="tertiary-container">
+      <div class="footer-branding-container">
+        <div class="footer-logos"><img src=
+        "/assets/img/site-wide/usda.svg" alt="USDA" class=
+        "fs-footer-logo"><img src=
+        "/assets/img/site-wide/usfslogo.svg" alt=
+        "US Forest Service" class="fs-footer-logo"></div>
+        <div class="fs-usda-names-container">
+          <span class="fs-name">Forest Service</span> <span class=
+          "usda-name desktop">U.S. DEPARTMENT OF AGRICULTURE</span>
+          <span class="usda-name mobile">U.S.D.A.</span>
+        </div>
+      </div>
+      <div class="social-links">
+        <a href="https://twitter.com/forestservice" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-twitter.svg" alt=
+        "Twitter" target="_blank" class=
+        "usa-social-image"></a><a href=
+        "https://www.facebook.com/USForestService/" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-facebook.svg" alt=
+        "Facebook" target="_blank" class=
+        "usa-social-image"></a><a href=
+        "https://www.youtube.com/user/usdaForestService" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-youtube.svg" alt=
+        "YouTube" target="_blank" class=
+        "usa-social-image"></a><a href=
+        "https://www.flickr.com/photos/usforestservice/" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-flickr.svg" alt="Flickr"
+        target="_blank" class="usa-social-image"></a><a href=
+        "https://www.instagram.com/u.s.forestservice/" class=
+        "social-link"><img src=
+        "/assets/img/site-wide/social-icon-instagram.svg" alt=
+        "Instagram" target="_blank" class="usa-social-image"></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
