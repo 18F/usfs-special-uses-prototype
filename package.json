@@ -1,0 +1,16 @@
+{
+  "name": "usfs-special-uses-prototype",
+  "version": "1.0.0",
+  "description": "The focal point for 18F/TTS project with the United States Forest Service special uses digital permitting",
+  "main": "index.js",
+  "scripts": {
+		"start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^2.0.1"
+  }
+}
