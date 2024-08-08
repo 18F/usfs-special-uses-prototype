@@ -1,0 +1,46 @@
+---
+layout: layouts/question.njk
+title: What type of use?
+---
+
+<h1>What type of use?</h1>
+
+<p>
+Special use permits are used in Forest Service for many different types of activities.
+</p>
+
+
+<form class="usa-form usa-form--large" action="/question2/" method="get">
+  <fieldset class="usa-fieldset">
+    <legend class="usa-legend">Please select your use.</legend>
+
+    <div class="usa-radio">
+        <input
+        class="usa-radio__input"
+        id="usetype-broadband"
+        type="radio"
+        name="usetype"
+        value="broadband"
+        checked
+        />
+        <label class="usa-radio__label" for="usetype-broadband"
+        >Broadband</label
+        >
+    </div>
+
+    <div class="usa-radio">
+        <input
+        class="usa-radio__input"
+        id="usetype-other"
+        type="radio"
+        name="usetype"
+        value="other"
+        />
+        <label class="usa-radio__label" for="usetype-other"
+        >Other</label
+        >
+    </div>
+
+    <input class="usa-button" type="submit" value="Submit" />
+  </fieldset>
+</form>
