@@ -5,8 +5,8 @@ special uses digital permitting
 
 ## Developing
 
-A static site is in the `site/` directory. To push to cloud.gov, use `cf push
-special-uses`.
+An HTML site is built by [Eleventy](https://11ty.rocks) in the `site/`
+directory. To push that site to cloud.gov, use `cf push special-uses`.
 
 ## Contributing
 
