@@ -20,6 +20,9 @@ jobs:
 
       - uses: actions/setup-node@v4
 
+      - name: Install node packages
+        run: npm ci
+
       - name: Build site
         run: npm run build
 
