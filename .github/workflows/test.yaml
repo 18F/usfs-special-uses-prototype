@@ -18,10 +18,10 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-			- uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
 
-			- name: Build site
-				run: npm run build
+      - name: Build site
+        run: npm run build
 
       - name: Start web serving container
         # leverage the docker compose setup that we already have for local development
