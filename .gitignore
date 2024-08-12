@@ -1,2 +1,6 @@
 .DS_Store
 /todo.txt
+site/*.html
+site/about/
+site/sitemap.xml
+node_modules

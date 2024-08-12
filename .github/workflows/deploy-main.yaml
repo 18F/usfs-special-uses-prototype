@@ -16,6 +16,9 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Build with Eleventy
+        uses: TartanLlama/actions-eleventy@master
+
       - name: Deploy to cloud.gov
         uses: cloud-gov/cg-cli-tools@main
         with:
