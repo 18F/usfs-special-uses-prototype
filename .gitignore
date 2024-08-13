@@ -1,6 +1,4 @@
 .DS_Store
 /todo.txt
-site/*.html
-site/about/
-site/sitemap.xml
+site/*
 node_modules
