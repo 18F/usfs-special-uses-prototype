@@ -10,3 +10,11 @@ services:
         target: /usr/share/nginx/html
     ports:
       - "8080:80"
+
+  owasp:
+    image: owasp/zap2docker-stable
+    command: zap-baseline.py -t https://special-uses.app.cloud.gov/ -I -r zap_report.html
+    volumes:
+      - .:/zap/wrk/
+    links: ["web"]
+    profiles: ["owasp-scan"]
