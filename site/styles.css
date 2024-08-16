@@ -813,27 +813,11 @@
   .forest-hero  {
   background-size: cover;
   background-position: center;
-  background-image: url(/assets/img/firewood.jpeg);
+  background-image: url(/assets/img/firewood.webp);
   }
 
   .forest-hero.dot-0  {
-  background-image: url(/assets/img/firewood.jpeg);
-  }
-
-  .forest-hero.dot-1  {
-  background-image: url(/assets/img/site-wide/firewood.jpg);
-  }
-
-  .forest-hero.dot-2  {
-  background-image: url(/assets/img/forests/flathead.jpg);
-  }
-
-  .forest-hero.dot-3  {
-  background-image: url(/assets/img/site-wide/firewood_2.jpg);
-  }
-
-  .forest-hero.dot-4  {
-  background-image: url(/assets/img/site-wide/berries.jpg);
+  background-image: url(/assets/img/firewood.webp);
   }
 
   .forest-hero   .forest-picker-hero  {
@@ -1390,11 +1374,11 @@
   .forest-hero  {
   background-size: cover;
   background-position: center;
-  background-image: url(/assets/img/firewood.jpeg);
+  background-image: url(/assets/img/firewood.webp);
   }
 
   .forest-hero.dot-0  {
-  background-image: url(/assets/img/firewood.jpeg);
+  background-image: url(/assets/img/firewood.webp);
   }
 
   .forest-hero.dot-1  {
