@@ -16,7 +16,7 @@ services:
 
   owasp:
     image: owasp/zap2docker-stable
-    command: zap-baseline.py -t http://web:80/ -I -r zap_report.html
+    command: zap-baseline.py -c zap.conf -t http://web:80/ -I -r zap_report.html
     volumes:
       - .:/zap/wrk/
     links: ["web"]
