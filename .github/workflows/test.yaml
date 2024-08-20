@@ -34,3 +34,24 @@ jobs:
         run: |
           sleep 10;
           npm run pa11y-ci:sitemap
+
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+      - name: Install node packages
+        run: npm ci
+      - name: Build site
+        run: npm run build
+      - name: Start web serving container
+        # leverage the docker compose setup that we already have for local development
+        run: docker compose up -d
+
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            http://localhost:8080/
+          configPath: './.lighthouserc.json'
+          uploadArtifacts: true # save results as an action artifacts

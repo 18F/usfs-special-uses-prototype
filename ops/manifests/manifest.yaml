@@ -1,3 +1,5 @@
 ---
 applications:
 - name: special-uses
+  buildpacks:
+    - staticfile_buildpack
