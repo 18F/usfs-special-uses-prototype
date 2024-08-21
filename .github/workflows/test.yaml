@@ -82,5 +82,5 @@ jobs:
       - name: ZAP Scan
         uses: zaproxy/action-baseline@v0.12.0
         with:
-          target: 'https://localhost:8080'
+          target: 'http://localhost:8080'
           rules_file_name: ./zap.conf
