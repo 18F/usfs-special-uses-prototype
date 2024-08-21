@@ -60,6 +60,7 @@ jobs:
           uploadArtifacts: true # save results as an action artifacts
 
   owasp-zap:
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
