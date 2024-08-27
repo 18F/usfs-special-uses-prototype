@@ -6,6 +6,13 @@
   }
   }
 
+.how-you-know {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .about {
   width: calc(100% - 180px);
   max-width: 1040px;
