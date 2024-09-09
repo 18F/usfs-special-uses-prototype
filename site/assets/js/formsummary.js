@@ -2,9 +2,9 @@
 if (document.readyState !== 'loading') {
   fillSummaryInformation();
 } else {
-	window.addEventListener("DOMContentLoaded", function () {
-		fillSummaryInformation();
-	});
+  window.addEventListener("DOMContentLoaded", function () {
+    fillSummaryInformation();
+  });
 }
 
 function fillSummaryInformation() {

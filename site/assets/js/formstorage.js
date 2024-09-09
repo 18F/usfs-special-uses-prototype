@@ -2,9 +2,9 @@
 if (document.readyState !== 'loading') {
   attachFormsSubmitHandler();
 } else {
-	window.addEventListener("DOMContentLoaded", function () {
-		attachFormsSubmitHandler();
-	});
+  window.addEventListener("DOMContentLoaded", function () {
+    attachFormsSubmitHandler();
+  });
 }
 
 function attachFormsSubmitHandler() {
@@ -17,12 +17,12 @@ function attachFormsSubmitHandler() {
 }
 
 function saveSubmittedData(event) {
-	console.log("Handling submit button click");
+  console.log("Handling submit button click");
   console.log("Event sent from", event.target, "with submitter", event.submitter);
   var formData = new FormData(event.target, event.submitter);
 
   for (const [name, value] of formData) {
-		// form a key to save the data include .name and set that to .value in sessionStorage
+    // form a key to save the data include .name and set that to .value in sessionStorage
     const key = "form-save-submit-" + event.target.id + "-" + name;
     window.sessionStorage.setItem(key, value);
   }
