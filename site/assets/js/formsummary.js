@@ -18,18 +18,13 @@ function fillSummaryInformation() {
   console.log("div has dd elements", descriptionElements);
 
   for (const element of descriptionElements) {
-    console.log("Updating value for element", element);
     // each dd element has a data-field-key attribute that
     // is used to build the key into sessionStorage
     var fieldKey = element.attributes["data-field-key"].value;
-    console.log("Got field key", fieldKey);
     if (fieldKey != null) {
       const storageKey = "form-save-submit-" + fieldKey;
       var itemValue = window.sessionStorage.getItem(storageKey);
-      console.log("Found session storage value", itemValue);
       element.textContent = itemValue;
-    } else {
-      console.log("dd element has no data-field-key");
     }
   }
 }
