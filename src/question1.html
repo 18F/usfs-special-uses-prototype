@@ -1,46 +1,178 @@
 ---
 layout: layouts/question.njk
-title: What type of use?
+title: Who should the Forest Service contact about this proposal?
 ---
-
-<h1>What type of use?</h1>
-
-<p>
-Special use permits are used in Forest Service for many different types of activities.
-</p>
-
-
-<form class="usa-form usa-form--large" action="/question2/" method="get">
-  <fieldset class="usa-fieldset">
-    <legend class="usa-legend">Please select your use.</legend>
-
-    <div class="usa-radio">
-        <input
-        class="usa-radio__input"
-        id="usetype-broadband"
-        type="radio"
-        name="usetype"
-        value="broadband"
-        checked
-        />
-        <label class="usa-radio__label" for="usetype-broadband"
-        >Broadband</label
-        >
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-4 margin-bottom-4 tablet:margin-bottom-0">
+      <nav aria-label="Side navigation,">
+        <ul class="usa-sidenav">
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);" class="usa-current">Contact information</a>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);">If the proposal and application are successful, who will hold the permit?</a>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);">What kind of organization is it?</a>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);">What kind of corporation?</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <div class="usa-radio">
-        <input
-        class="usa-radio__input"
-        id="usetype-other"
-        type="radio"
-        name="usetype"
-        value="other"
-        />
-        <label class="usa-radio__label" for="usetype-other"
-        >Other</label
-        >
+    <div class="tablet:grid-col-8 margin-bottom-4 tablet:margin-bottom-0">
+      <h2>Who should the Forest Service contact about this proposal?</h2>
+      <p>Enter contact information for the person who will work with the Forest Service during the proposal screening process.</p>
+      <form class="usa-form usa-form--large" action="/question2/" method="get">
+        <fieldset class="usa-fieldset">
+      
+          <label class="usa-label" for="contact-name">Point of contact name</label>
+          <input class="usa-input" id="contact-name" name="contact-name" />
+      
+          <label class="usa-label" for="contact-email">Point of contact email</label>
+          <input class="usa-input" id="contact-email" name="contact-email" />
+          
+          <label class="usa-label" for="contact-phone">Point of contact phone</label>
+          <input class="usa-input" id="contact-phone" name="contact-phone" />
+      
+          <label class="usa-label" for="contact-address">Point of contact address</label>
+          <textarea
+              class="usa-textarea"
+              id="contact-address"
+              name="contact-address"
+          ></textarea>
+      
+          <h3 class="site-preview-heading">If the proposal and application are successful, who will hold the permit?
+          </h3>
+          <fieldset class="usa-fieldset">
+            <legend class="usa-legend usa-legend">The legal entity that would hold the permit is the applicant. This could be an individual or an organization.
+            </legend>
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="historical-truth"
+                type="radio"
+                name="historical-figures"
+                value="sojourner-truth"
+                checked="checked"
+              />
+              <label class="usa-radio__label" for="historical-truth"
+                >Me. I'm filling out this form for myself, as an individual.</label
+              >
+            </div>
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="historical-douglass"
+                type="radio"
+                name="historical-figures"
+                value="frederick-douglass"
+              />
+              <label class="usa-radio__label" for="historical-douglass-2"
+              >Another entity. I'm filling out the form on behalf of an organization.
+              ></label
+            >
+            </div>
+          
+          </fieldset>
+      
+          <h4 class="site-preview-heading">What kind of organization is it?
+          </h4>
+          <fieldset class="usa-fieldset">
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="historical-truth"
+                type="radio"
+                name="historical-figures"
+                value="sojourner-truth"
+                checked="checked"
+              />
+              <label class="usa-radio__label" for="historical-truth">
+                A corporation
+                <span class="usa-checkbox__label-description">
+                  A corporation is an organization incorporated under the laws of the state in which it is located. This includes both for-profit and not-for-profit corporations, as well as C corporations, S corporations, and Limited Liability Companies (LLCs).
+                </span>
+              </label>
+            </div>
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="historical-truth"
+                type="radio"
+                name="historical-figures"
+                value="sojourner-truth"
+                checked="checked"
+              />
+              <label class="usa-radio__label" for="historical-truth">
+                Partnership or association
+                <span class="usa-checkbox__label-description">
+                  A partnership is the relationship between two or more people to do trade or business. Each person contributes money, property, labor or skill, and shares in the profits and losses of the business.
+                </span>
+              </label>
+            </div>
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="historical-truth"
+                type="radio"
+                name="historical-figures"
+                value="sojourner-truth"
+                checked="checked"
+              />
+              <label class="usa-radio__label" for="historical-truth">
+                Government agency
+              </label>
+            </div>    
+          </fieldset>
+      
+          <h5 class="site-preview-heading">What kind of corporation?
+          </h5>
+          <fieldset class="usa-fieldset">
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="historical-truth"
+                type="radio"
+                name="historical-figures"
+                value="sojourner-truth"
+                checked="checked"
+              />
+              <label class="usa-radio__label" for="historical-truth">
+                Private
+                <span class="usa-checkbox__label-description">
+                  A company is privately held if it is not traded on a stock exchange.
+                </span>
+              </label>
+            </div>
+            <div class="usa-radio">
+              <input
+                class="usa-radio__input"
+                id="historical-truth"
+                type="radio"
+                name="historical-figures"
+                value="sojourner-truth"
+                checked="checked"
+              />
+              <label class="usa-radio__label" for="historical-truth">
+                Public
+                <span class="usa-checkbox__label-description">
+                  A company is publicly held if it is traded on a stock exchange.
+                </span>
+              </label>
+            </div> 
+          </fieldset>
+      
+          <input class="usa-button" type="submit" value="Submit" />
+      </form>
     </div>
+  </div>
+</div>
 
-    <input class="usa-button" type="submit" value="Submit" />
-  </fieldset>
-</form>
+
+
+
+
+

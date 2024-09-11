@@ -12,10 +12,12 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "^2.0.1",
-    "@quasibit/eleventy-plugin-sitemap": "^2.2.0"
+    "@11ty/eleventy": "^0.12.1",
+    "@quasibit/eleventy-plugin-sitemap": "^2.2.0",
+    "@uswds/uswds": "3.8.2"
   },
   "devDependencies": {
+    "@uswds/compile": "^1.2.0",
     "lighthouse": "^12.2.0",
     "pa11y-ci": "^2.4.2"
   }
