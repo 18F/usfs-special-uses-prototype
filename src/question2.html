@@ -1,53 +1,243 @@
 ---
 layout: layouts/question.njk
-title: Existing permit
+title: Applicant information
 ---
+<script type="text/javascript" src="/assets/js/question2.js"></script>
 
-<h1>Do you have an existing permit?</h1>
+<div class="grid-container">
+  <div class="grid-row grid-gap">
+    <div class="tablet:grid-col-4 margin-bottom-4 tablet:margin-bottom-0">
+      <nav aria-label="Side navigation,">
+        <ul class="usa-sidenav">
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);" class="usa-current">
+              <span class="entity-type">Entity</span> contact information
+            </a>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);">Are you an employee of the <span
+               class="entity-type">entity</span></a>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);">Are you an authorized agent of this
+              <span class="entity-type">entity</span>?</a>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);">Does this <span
+               class="entity-type">entity</span> have a parent company?</a>
+          </li>
+          <li class="usa-sidenav__item">
+            <a href="javascript:void(0);">Does this <span
+               class="entity-type">entity</span>, or its parent company, hold other permits with the Forest Service?</a>
+          </li>
+        </ul>
+      </nav>
 
-<p>
-Great, thanks.
-</p>
-
-<p>
-We need to know if you already have a permit or if you want to get a new permit.
-</p>
-
-
-<form id="existing-form" class="usa-form usa-form--large form-submit-save" action="/summary/" method="get">
-  <fieldset class="usa-fieldset">
-    <legend class="usa-legend">Do you have an existing permit?</legend>
-
-    <div class="usa-radio">
-        <input
-        class="usa-radio__input"
-        id="existing-yes"
-        type="radio"
-        name="existing"
-        value="yes"
-        />
-        <label class="usa-radio__label" for="existing-yes"
-        >Yes</label
-        >
     </div>
-    <div class="usa-radio">
-        <input
-        class="usa-radio__input"
-        id="existing-no"
-        type="radio"
-        name="existing"
-        value="no"
-        checked="checked"
-        />
-        <label class="usa-radio__label" for="existing-no"
-        >No</label
-        >
+    <div class="tablet:grid-col-8 margin-bottom-4 tablet:margin-bottom-0">
+
+    <form class="usa-form usa-form--large form-submit-save"
+      action="/question3/" method="get" id="question2">
+
+      <p> You told us that you are filling out this form on behalf of a
+      <span class="entity-type">entity</span>.</p>
+
+      <h2>Fill in the contact information for that <span
+          class="entity-type">entity</span>.</h2>
+
+
+      <fieldset class="usa-fieldset">
+        <label class="usa-label" for="applicant-name">Applicant name</label>
+        <input class="usa-input" id="applicant-name" name="applicant-name" />
+
+            <span class="usa-checkbox__label-description">
+             Enter the full registered legal name of the <span class="entity-type">entity</span>
+             that will hold the permit if
+             the proposal and application is successful. Do not enter any
+             other name, such as a DBA ("doing business as" name).
+            </span>
+
+        <label class="usa-label" for="applicant-email">Applicant email</label>
+        <input class="usa-input" id="applicant-email" name="applicant-email" />
+
+        <label class="usa-label" for="applicant-phone">Applicant phone number</label>
+        <input class="usa-input" id="applicant-phone" name="applicant-phone" />
+
+        <label class="usa-label" for="applicant-address">Applicant address</label>
+        <textarea
+            class="usa-textarea"
+            id="applicant-address"
+            name="applicant-address"
+        ></textarea>
+      </fieldset>
+
+      <h2 class="site-preview-heading">Are you an employee of this <span
+          class="entity-type">entity</span>?
+      </h2>
+
+      <fieldset class="usa-fieldset">
+        <legend class="usa-legend">
+          Consultants or contractors working on behalf of a client company
+          should answer "no."
+        </legend>
+
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="employee"
+            type="radio"
+            name="employee-consultant"
+            value="employee"
+            checked
+          />
+          <label class="usa-radio__label" for="employee">
+            Yes
+          </label>
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="consultant"
+            type="radio"
+            name="employee-consultant"
+            value="consultant"
+          />
+          <label class="usa-radio__label" for="consultant">
+            No
+          </label>
+
+            <span class="usa-checkbox__label-description">
+             You will need to provide a signed and dated letter from your client confirming
+             that you are authorized to complete this form on its behalf.<br/>
+             <a href="javascript:void(0);">View an example</a>
+            </span>
+        </div>
+      </fieldset>
+
+      <h2 class="site-preview-heading">Are you an authorized agent of this
+        <span class="entity-type">entity</span>?</h2>
+      <fieldset class="usa-fieldset">
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="authorized"
+            type="radio"
+            name="authorized-agent"
+            value="authorized"
+            checked="checked"
+          />
+          <label class="usa-radio__label" for="authorized">
+            Yes
+          </label>
+        </div>
+
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="not-authorized"
+            type="radio"
+            name="authorized-agent"
+            value="not-authorized"
+          />
+          <label class="usa-radio__label" for="not-authorized">
+            No
+          </label>
+        </div>
+      </fieldset>
+
+      <h2 class="site-preview-heading">Does this <span
+          class="entity-type">entity</a> have a parent company?</h2>
+      <fieldset class="usa-fieldset" id="parent-company">
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="has-parent"
+            type="radio"
+            name="parent-company"
+            value="has-parent"
+            checked="checked"
+          />
+          <label class="usa-radio__label" for="has-parent">
+            Yes
+          </label>
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="no-parent"
+            type="radio"
+            name="parent-company"
+            value="no-parent"
+          />
+          <label class="usa-radio__label" for="no-parent">
+            No
+          </label>
+        </div>
+      </fieldset>
+
+      <h2 class="site-preview-heading">Fill in the contact information for the
+        parent company of this <span class="entity-type">entity</span>.</h2>
+      <fieldset class="usa-fieldset" id="parent-info">
+        <label class="usa-label" for="parent-name">Parent company name</label>
+        <input class="usa-input" id="parent-name" name="parent-name" />
+
+        <label class="usa-label" for="parent-email">Parent company email</label>
+        <input class="usa-input" id="parent-email" name="parent-email" />
+
+        <label class="usa-label" for="parent-phone">Parent company phone number</label>
+        <input class="usa-input" id="parent-phone" name="parent-phone" />
+
+        <label class="usa-label" for="parent-address">Parent company address</label>
+        <textarea
+            class="usa-textarea"
+            id="parent-address"
+            name="parent-address"
+        ></textarea>
+      </fieldset>
+
+      <h2 class="site-preview-heading">Does this <span
+          class="entity-type">entity</span>, or its parent
+        company, hold other permits with the Forest Service?</h2>
+      <fieldset class="usa-fieldset" id="other-permits">
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="has-permits"
+            type="radio"
+            name="other-permits"
+            value="has-permits"
+          />
+          <label class="usa-radio__label" for="has-permits">
+            Yes
+          </label>
+        </div>
+        <div class="usa-radio">
+          <input
+            class="usa-radio__input"
+            id="no-permits"
+            type="radio"
+            name="other-permits"
+            value="no-permits"
+            checked
+          />
+          <label class="usa-radio__label" for="no-permits">
+            No
+          </label>
+        </div>
+      </fieldset>
+
+        <label class="usa-label site-preview-headings" for="permit-numbers">
+        Fill in the permit numbers separated by commas
+        </label>
+        <textarea
+            class="usa-textarea"
+            id="permit-numbers"
+            name="permit-numbers"
+        ></textarea>
+
+      <input class="usa-button" type="submit" id="submit-button" value="Submit" />
+    </form>
     </div>
+  </div>
+</div>
 
-    <input class="usa-button" type="submit" value="Submit" />
-  </fieldset>
-</form>
-
-</div>
-</div>
-</div>
