@@ -18,6 +18,7 @@
   },
   "devDependencies": {
     "@uswds/compile": "^1.2.0",
+    "cypress": "^13.14.2",
     "lighthouse": "^12.2.0",
     "pa11y-ci": "^2.4.2"
   }
