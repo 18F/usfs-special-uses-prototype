@@ -11,10 +11,10 @@ describe('Question 1', () => {
     cy.get('#agency-type').should("have.attr", "disabled");
   });
 
-  it('initially submits to summary', () => {
+  it('initially submits to submit', () => {
     cy.visit('/question1/');
 
-    cy.get('#question1').should("have.attr", "action", "/summary/");
+    cy.get('#question1').should("have.attr", "action", "/submit/");
   });
 
   it('submits to question2 for organizations', () => {
