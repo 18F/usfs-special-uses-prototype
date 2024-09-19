@@ -26,6 +26,9 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Compile USWDS
+        run: npx gulp compile
+
       - name: Start web serving container
         # leverage the docker compose setup that we already have for local development
         run: docker compose up -d
@@ -44,6 +47,8 @@ jobs:
         run: npm ci
       - name: Build site
         run: npm run build
+      - name: Compile USWDS
+        run: npx gulp compile
       - name: Start web serving container
         # leverage the docker compose setup that we already have for local development
         run: docker compose up -d
@@ -72,6 +77,9 @@ jobs:
       - name: Build site
         run: npm run build
 
+      - name: Compile USWDS
+        run: npx gulp compile
+
       - name: Start web serving container
         # leverage the docker compose setup that we already have for local development
         run: docker compose up -d
@@ -90,6 +98,22 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+
+      - name: Install node packages
+        run: npm ci
+
+      - name: Build site
+        run: npm run build
+
+      - name: Compile USWDS
+        run: npx gulp compile
+
+      - name: Start web serving container
+        # leverage the docker compose setup that we already have for local development
+        run: docker compose up -d
+
 
       # Install npm dependencies, cache them correctly
       # and run all Cypress tests

@@ -24,6 +24,9 @@ jobs:
       - name: Build with Eleventy
         run: npm run build
 
+      - name: Compile USWDS
+        run: npx gulp compile
+
       - name: Deploy to cloud.gov
         uses: cloud-gov/cg-cli-tools@main
         with:
