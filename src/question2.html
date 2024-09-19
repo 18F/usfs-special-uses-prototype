@@ -42,11 +42,11 @@ title: Applicant information
       <p> You told us that you are filling out this form on behalf of a
       <span class="entity-type">entity</span>.</p>
 
-      <h2>Fill in the contact information for that <span
-          class="entity-type">entity</span>.</h2>
 
 
       <fieldset class="usa-fieldset">
+        <legend><h2>Fill in the contact information for that <span
+          class="entity-type">entity</span>.</h2></legend>
         <label class="usa-label" for="applicant-name">Applicant name</label>
         <input class="usa-input" id="applicant-name" name="applicant-name" />
 
@@ -71,15 +71,17 @@ title: Applicant information
         ></textarea>
       </fieldset>
 
-      <h2 class="site-preview-heading">Are you an employee of this <span
-          class="entity-type">entity</span>?
-      </h2>
 
       <fieldset class="usa-fieldset">
         <legend class="usa-legend">
-          Consultants or contractors working on behalf of a client company
-          should answer "no."
+					<h2 class="site-preview-heading">Are you an employee of this <span
+							class="entity-type">entity</span>?
+					</h2>
         </legend>
+
+				<p>Consultants or contractors working on behalf of a client company
+          should answer "no."
+			  </p>
 
         <div class="usa-radio">
           <input
@@ -114,9 +116,11 @@ title: Applicant information
         </div>
       </fieldset>
 
-      <h2 class="site-preview-heading">Are you an authorized agent of this
-        <span class="entity-type">entity</span>?</h2>
       <fieldset class="usa-fieldset">
+			  <legend>
+          <h2 class="site-preview-heading">Are you an authorized agent of this
+          <span class="entity-type">entity</span>?</h2>
+        </legend>
         <div class="usa-radio">
           <input
             class="usa-radio__input"
@@ -145,9 +149,11 @@ title: Applicant information
         </div>
       </fieldset>
 
-      <h2 class="site-preview-heading">Does this <span
-          class="entity-type">entity</a> have a parent company?</h2>
       <fieldset class="usa-fieldset" id="parent-company">
+        <legend>
+          <h2 class="site-preview-heading">Does this <span
+          class="entity-type">entity</a> have a parent company?</h2>
+        </legend>
         <div class="usa-radio">
           <input
             class="usa-radio__input"
@@ -175,9 +181,11 @@ title: Applicant information
         </div>
       </fieldset>
 
-      <h2 class="site-preview-heading">Fill in the contact information for the
-        parent company of this <span class="entity-type">entity</span>.</h2>
       <fieldset class="usa-fieldset" id="parent-info">
+        <legend>
+          <h2 class="site-preview-heading">Fill in the contact information for the
+          parent company of this <span class="entity-type">entity</span>.</h2>
+        </legend>
         <label class="usa-label" for="parent-name">Parent company name</label>
         <input class="usa-input" id="parent-name" name="parent-name" />
 
@@ -195,10 +203,12 @@ title: Applicant information
         ></textarea>
       </fieldset>
 
-      <h2 class="site-preview-heading">Does this <span
-          class="entity-type">entity</span>, or its parent
-        company, hold other permits with the Forest Service?</h2>
       <fieldset class="usa-fieldset" id="other-permits">
+        <legend>
+					<h2 class="site-preview-heading">Does this <span
+          class="entity-type">entity</span>, or its parent
+					company, hold other permits with the Forest Service?</h2>
+				</legend>
         <div class="usa-radio">
           <input
             class="usa-radio__input"
