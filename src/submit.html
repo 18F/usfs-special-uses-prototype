@@ -5,9 +5,24 @@ title: Form summary
 
 <script type="text/javascript" src="/assets/js/formsummary.js"></script>
 
-<h1>Your information so far</h1>
+<h1>Review and submit</h1>
 
-<p>Here is a summary of the information you have submitted so far:</p>
+<h2>Review your information</h2>
+
+<h3>SF-299</h3>
+
+<p>We have entered the information you have share into SF-299, the official
+form for initiating a proposal for a special-use permit.</p>
+
+<p><a href="javascript:void(0);">Preview your completed SF-299</a></p>
+
+To edit the form, use the navigation menus to return to your previous response.
+
+<h3>Supporting documents</h3>
+
+You have uploaded these supporting documents.
+
+<div id="file-summary"></div>
 
 <div id="form-summary">
 
@@ -19,6 +34,10 @@ title: Form summary
     <dt>Existing permit:</dt>
     <dd data-field-key="existing-form-existing"></dd>
 
-  </ul>
+  </dl>
 
 </div>
+
+<form action="/confirmation/" method="get">
+  <input class="usa-button" type="submit" value="Submit your SF-299 and supporting documents"/>
+</form>
